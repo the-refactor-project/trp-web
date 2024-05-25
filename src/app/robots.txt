@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /certificados/
+Disallow: /gracias
+Disallow: /privacidad
+Disallow: /aviso-legal
+Disallow: /taller

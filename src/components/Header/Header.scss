@@ -1,0 +1,27 @@
+@use "../../styles/variables";
+
+.main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: variables.$header-height;
+  background-color: #fff;
+  box-shadow: 0 0 15px #ddd;
+  z-index: 5;
+
+  > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.logo {
+  width: 130px;
+  display: block;
+
+  @media (width >= 450px) {
+    width: 200px;
+  }
+}
