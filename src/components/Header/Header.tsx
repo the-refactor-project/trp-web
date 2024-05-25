@@ -23,6 +23,7 @@ const Header = (): React.ReactElement => {
             alt="Logotipo de The Refactor Project"
             width="200"
             height="57"
+            priority
           />
         </a>
         <Burger isOpen={isBurgerOpen} toggleBurgerOpen={toggleBurgerOpen} />
