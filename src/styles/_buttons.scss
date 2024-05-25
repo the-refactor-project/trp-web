@@ -1,0 +1,47 @@
+@use "./variables";
+
+.button {
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &--large {
+    min-width: 180px;
+  }
+
+  &--full {
+    @media (max-width: variables.$breakpoint-sm) {
+      width: 100%;
+    }
+  }
+}
+
+.button--solid {
+  border: 1px solid variables.$color-primary;
+  background-color: variables.$color-primary;
+  color: variables.$color-secondary;
+
+  &:hover,
+  &:focus {
+    background: variables.$color-secondary;
+    color: variables.$color-primary;
+  }
+}
+
+.button--outline {
+  border: 1px solid variables.$color-primary;
+  background-color: variables.$color-secondary;
+  color: variables.$color-primary;
+
+  &:hover,
+  &:focus {
+    background: variables.$color-primary;
+    color: variables.$color-secondary;
+  }
+}
