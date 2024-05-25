@@ -1,0 +1,92 @@
+@use "./variables";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-roboto-flex);
+  font-weight: 300;
+  color: variables.$color-primary;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+select,
+input,
+textarea {
+  font: inherit;
+  border: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-space-grotesk);
+  font-weight: variables.$font-weight-headings;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.hidden {
+  left: -9999px;
+  position: absolute;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 9;
+}
+
+[data-trustmary-status] h2 {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+
+  @media (width >= variables.$breakpoint-sm) {
+    font-size: 2.5rem !important;
+  }
+
+  @media (width >= variables.$breakpoint-lg) {
+    font-size: 4rem !important;
+  }
+}
