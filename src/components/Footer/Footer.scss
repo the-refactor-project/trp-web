@@ -1,0 +1,79 @@
+@use "../../styles/variables";
+
+.main-footer {
+  background-color: variables.$color-primary;
+  color: variables.$color-secondary;
+
+  > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (width >= variables.$breakpoint-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @media (width >= variables.$breakpoint-lg) {
+      flex-direction: row;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__logo {
+      height: 30px;
+    }
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .secondary-navigation > * {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (width >= variables.$breakpoint-lg) {
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
