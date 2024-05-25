@@ -1,0 +1,59 @@
+@use "../../styles/variables";
+@use "../../styles/flex";
+
+.main-navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -400px;
+  background-color: variables.$color-secondary;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  transition: top 0.2s;
+
+  &--open {
+    top: variables.$header-height;
+  }
+
+  > * {
+    @include flex.vertical-flex;
+    gap: 10px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (width >= variables.$breakpoint-lg) {
+    position: static;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+
+    > * {
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    a {
+      display: block;
+      padding: 20px 10px;
+      border-radius: 10px;
+      transition: all 0.1s;
+
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: rgba(variables.$color-brand, 0.05);
+        text-decoration: none;
+      }
+    }
+  }
+}

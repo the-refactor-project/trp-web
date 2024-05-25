@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./Header.scss";
+import Nav from "../Nav/Nav";
 
 const Header = (): React.ReactElement => {
   return (
@@ -14,6 +15,7 @@ const Header = (): React.ReactElement => {
             height="57"
           />
         </a>
+        <Nav />
       </div>
     </header>
   );
