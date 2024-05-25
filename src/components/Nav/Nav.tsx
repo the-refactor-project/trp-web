@@ -1,9 +1,13 @@
 import Link from "next/link";
 import "./Nav.scss";
 
-const Nav = (): React.ReactElement => {
+interface NavProps {
+  isOpen: boolean;
+}
+
+const Nav = ({ isOpen }: NavProps): React.ReactElement => {
   return (
-    <nav className="main-navigation">
+    <nav className={`main-navigation${isOpen ? " main-navigation--open" : ""}`}>
       <ul>
         <li className="main-navigation__item">
           <Link href="/">Home</Link>

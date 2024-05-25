@@ -1,8 +1,18 @@
+"use client";
+
 import Image from "next/image";
-import "./Header.scss";
+import { useState } from "react";
 import Nav from "../Nav/Nav";
+import Burger from "../Burger/Burger";
+import "./Header.scss";
 
 const Header = (): React.ReactElement => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  const toggleBurgerOpen = () => {
+    setIsBurgerOpen((isBurgerOpen) => !isBurgerOpen);
+  };
+
   return (
     <header className="main-header" data-testid="header">
       <div className="container">
@@ -15,7 +25,8 @@ const Header = (): React.ReactElement => {
             height="57"
           />
         </a>
-        <Nav />
+        <Burger isOpen={isBurgerOpen} toggleBurgerOpen={toggleBurgerOpen} />
+        <Nav isOpen={isBurgerOpen} />
       </div>
     </header>
   );
