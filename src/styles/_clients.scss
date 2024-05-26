@@ -1,0 +1,18 @@
+@use "./variables";
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (width >= variables.$breakpoint-lg) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+    .logo__image-container {
+      height: 200px;
+      line-height: 200px;
+    }
+  }
+}
