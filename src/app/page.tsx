@@ -41,6 +41,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="container">
+        <section className="section section--centered">
+          <h1 className="section__title">Descubre nuestros próximos cursos</h1>
+          <div className="section__text">
+            <p>
+              Ya estés dando tus primeros pasos en el desarrollo web o seas
+              developer, descubre cómo potenciar tus habilidades.
+            </p>
+            <p>
+              <strong>Contáctanos y te lo contamos</strong>. Nuestro objetivo es
+              acompañarte en cada etapa de tu carrera profesional.
+            </p>
+            <p>
+              También puedes leer{" "}
+              <Link href="#opiniones">opiniones de exalumnos/as</Link> para ver
+              cómo fue su experiencia.
+            </p>
+          </div>
+          <div className="section__actions">
+            <Link className="button button--solid button--large" href="/cursos">
+              Mira los cursos
+            </Link>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
