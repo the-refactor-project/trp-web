@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "../styles/_hero.scss";
 import Link from "next/link";
+import Courses from "../components/Courses/Courses";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <Courses />
       </div>
     </main>
   );

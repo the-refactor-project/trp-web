@@ -1,0 +1,157 @@
+@use "../../styles/variables";
+@use "../../styles/flex";
+
+.courses {
+  &-list {
+    @media (width >= variables.$breakpoint-sm) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      column-gap: 40px;
+    }
+
+    > :last-child > .course::after {
+      display: none;
+    }
+
+    &__featured {
+      grid-column: 1 / span 2;
+
+      .course {
+        padding-top: 0;
+
+        @media (width >= variables.$breakpoint-lg) {
+          flex-direction: row;
+          justify-content: flex-end;
+          height: 410px;
+          margin-bottom: 10px;
+        }
+
+        &__image--desktop {
+          display: none;
+        }
+
+        &__title {
+          @media (width >= variables.$breakpoint-sm) {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+          }
+        }
+
+        &__info {
+          @include flex.vertical-flex;
+          z-index: 1;
+          justify-content: space-between;
+
+          @media (width >= variables.$breakpoint-lg) {
+            padding: 35px 0;
+            height: 100%;
+            flex: 0.4;
+          }
+        }
+
+        &__data-list {
+          align-self: flex-start;
+        }
+
+        &__image {
+          @media (width >= variables.$breakpoint-lg) {
+            display: none;
+          }
+
+          &--desktop {
+            @media (width >= variables.$breakpoint-lg) {
+              display: block;
+              position: absolute;
+              inset: 0;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        &--inverse {
+          @media (width >= variables.$breakpoint-lg) {
+            margin-top: 20px;
+            padding: 0 20px;
+
+            .course {
+              &__title {
+                height: auto;
+                margin-top: 0;
+                margin-bottom: 10px;
+              }
+
+              &__info {
+                @media (width >= variables.$breakpoint-lg) {
+                  background-color: variables.$color-secondary;
+                  border-radius: 20px;
+                  padding: 20px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.course {
+  position: relative;
+  @include flex.vertical-flex;
+  padding: 40px 0;
+
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    @media (width >= variables.$breakpoint-lg) {
+      font-size: 2.5rem;
+      align-self: flex-start;
+      height: 90px;
+    }
+  }
+
+  &__data-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  &__data {
+    flex: 1;
+
+    &-name {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &-value {
+      line-height: 1.4;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+    background-color: #ddd;
+    height: 1px;
+    box-shadow: 0 0 10px #ddd;
+
+    @media (width >= variables.$breakpoint-lg) {
+      display: none;
+    }
+  }
+}
