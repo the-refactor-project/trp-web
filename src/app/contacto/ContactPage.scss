@@ -1,0 +1,65 @@
+@use "../../styles/variables";
+
+.contact {
+  gap: 50px;
+
+  @media (width >= 960px) {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+
+    .section__title {
+      text-align: left;
+    }
+  }
+
+  .section__text {
+    align-items: flex-start;
+  }
+}
+
+.form {
+  text-align: left;
+  background-color: variables.$color-primary;
+  color: variables.$color-secondary;
+  padding: 20px;
+  margin: 40px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+
+  @media (width >= variables.$breakpoint-lg) {
+    padding: 40px;
+    margin: 0;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__control {
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+
+  &__submit {
+    text-align: right;
+    margin-top: 20px;
+
+    .button {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      &:hover {
+        border: 1px solid variables.$color-secondary;
+      }
+    }
+  }
+}
+
+.map iframe {
+  width: 100%;
+}
