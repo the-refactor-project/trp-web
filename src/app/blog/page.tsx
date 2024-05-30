@@ -17,7 +17,7 @@ const BlogPage = (): React.ReactElement => {
           <h1 className="section__title">Blog</h1>
           <p className="section__description">Últimos artículos del blog</p>
           <ul className="posts">
-            <li className="post-preview">
+            {/* <li className="post-preview">
               <header className="post-preview__header">
                 <h2 className="post-preview__title">
                   <Link href="/blog/se-puede-aprender-a-programar-en-cuatro-meses">
@@ -35,7 +35,7 @@ const BlogPage = (): React.ReactElement => {
                 height="631"
                 alt="Un portátil"
               />
-            </li>
+            </li> */}
             <li className="post-preview">
               <header className="post-preview__header">
                 <h2 className="post-preview__title">
