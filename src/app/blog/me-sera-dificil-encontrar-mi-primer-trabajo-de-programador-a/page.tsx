@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Analizamos las razones por las que algunos juniors están teniendo tantas dificultades para encontrar su primer puesto de trabajo en la industria del desarrollo de software, y proponemos la alternativa para que tu caso sea diferente.",
 };
 
-const BlogPost1Page = (): React.ReactElement => {
+const BlogPost2Page = (): React.ReactElement => {
   return (
     <main className="main-content">
       <div className="container">
@@ -395,4 +395,4 @@ const BlogPost1Page = (): React.ReactElement => {
   );
 };
 
-export default BlogPost1Page;
+export default BlogPost2Page;
