@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Quieres trabajar como programador/a - The Refactor Project",
@@ -14,6 +15,9 @@ const BlogPost1Page = (): React.ReactElement => {
         <section className="section">
           <article className="post">
             <header className="post__header">
+              <Link href="/blog" style={{ display: "block", marginBottom: 20 }}>
+                Volver al índice del blog
+              </Link>
               <h1 className="post__title">
                 Quieres trabajar como programador/a
               </h1>
@@ -71,12 +75,12 @@ const BlogPost1Page = (): React.ReactElement => {
                   no te va a abrir las puertas del mercado laboral
                 </strong>{" "}
                 (hablábamos de esto{" "}
-                <a
+                <Link
                   href="/blog/me-sera-dificil-encontrar-mi-primer-trabajo-de-programador-a"
                   target="_blank"
                 >
                   aquí
-                </a>
+                </Link>
                 ). No basta con saber programar, hay que conocer las dinámicas
                 de la profesión y entrenar bien las skills que van a pedirte las
                 empresas cuando te presentes a un proceso de selección. Y, sobre
@@ -119,12 +123,12 @@ const BlogPost1Page = (): React.ReactElement => {
               <p>
                 Cuando diseñamos nuestro curso{" "}
                 <strong>
-                  <a
+                  <Link
                     href="/cursos/crafting-en-desarrollo-web-profesional"
                     target="_blank"
                   >
                     Crafting en Desarrollo Web Profesional
-                  </a>
+                  </Link>
                 </strong>{" "}
                 tomamos la decisión de que el curso iba a ser{" "}
                 <strong>directamente con TypeScript</strong>, así que optas por
