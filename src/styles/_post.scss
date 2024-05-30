@@ -1,0 +1,91 @@
+@use "./variables";
+
+.posts {
+  @media (width >= variables.$breakpoint-lg) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.post {
+  font-size: 1.1rem;
+
+  @media (width >= variables.$breakpoint-lg) {
+    font-size: 1.2rem;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__footer {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    @media (width >= variables.$breakpoint-lg) {
+      font-size: 3rem;
+    }
+  }
+
+  &__author {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    h2 {
+      margin: 40px 0 10px;
+      font-size: 1.4rem;
+
+      @media (width >= variables.$breakpoint-lg) {
+        font-size: 1.5rem;
+      }
+    }
+
+    h3 {
+      margin: 40px 0 10px;
+      font-size: 1.2rem;
+
+      @media (width >= variables.$breakpoint-lg) {
+        font-size: 1.3rem;
+      }
+    }
+
+    p {
+      line-height: 1.8;
+      margin: 10px 0 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      list-style: disc;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-preview {
+    margin-bottom: 40px;
+
+    &__header {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      @media (width >= variables.$breakpoint-lg) {
+        min-height: 72px;
+      }
+    }
+  }
+}
