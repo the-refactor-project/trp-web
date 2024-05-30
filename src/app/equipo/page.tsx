@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import "./StaffPage.scss";
 import Image from "next/image";
 import Link from "next/link";
+import "./StaffPage.scss";
 
 export const metadata: Metadata = {
   title: "Nuestro equipo - The Refactor Project",

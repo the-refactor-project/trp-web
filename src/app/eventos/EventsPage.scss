@@ -1,0 +1,41 @@
+@use "../../styles/variables";
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @media (width >= variables.$breakpoint-sm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 80px;
+    row-gap: 80px;
+  }
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__metadata {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__actions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
