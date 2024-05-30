@@ -3,8 +3,16 @@ import Link from "next/link";
 import Courses from "../components/Courses/Courses";
 import Reviews from "../components/Reviews/Reviews";
 import "../styles/_hero.scss";
+import { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title:
+    "The Refactor Project - Cursos de programación presenciales y online en Barcelona",
+  description:
+    "Aprende la profesión de programador de la mano de un senior developer en un bootcamp intensivo presencial, o potencia tu carrera realizando uno de nuestros cursos online avanzados.",
+};
+
+export default function HomePage() {
   return (
     <main className="main-content">
       <section
