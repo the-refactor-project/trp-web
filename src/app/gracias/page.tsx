@@ -1,12 +1,11 @@
 import { Metadata } from "next";
-import Courses from "../../components/Courses/Courses";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Cursos de programación presenciales y online en Barcelona - The Refactor Project",
+    "Contacta con nosotros o inscríbete a los cursos - The Refactor Project",
   description:
-    "Potencia tus habilidades como programador/a con nuestros cursos de iniciación, coding bootcamps y avanzados. Tanto si quieres buscar trabajo como developer fullstack como si ya trabajas y quieres ampliar tus conocimientos para ascender en tu carrera.",
+    "Escríbenos para solicitar información sobre los cursos de programación o para apuntarte a uno de ellos.",
 };
 
 const ThanksPage = (): React.ReactElement => {
