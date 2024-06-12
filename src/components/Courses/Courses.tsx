@@ -56,13 +56,13 @@ const Courses = (): React.ReactElement => {
                 >
                   Ver curso
                 </Link>
-                <Link
+                <a
                   href="/docs/Dossier Crafting en Desarrollo Web Profesional.pdf"
                   className="button button--outline button--large"
                   download
                 >
                   Descarga el dossier
-                </Link>
+                </a>
               </div>
             </div>
           </article>
@@ -113,13 +113,13 @@ const Courses = (): React.ReactElement => {
                 >
                   Ver curso
                 </Link>
-                <Link
+                <a
                   href="/docs/Dossier Ingeniería en el Software SOLID & Design Patterns.pdf"
                   className="button button--outline button--large"
                   download
                 >
                   Descarga el dossier
-                </Link>
+                </a>
               </div>
             </div>
           </article>
@@ -160,13 +160,13 @@ const Courses = (): React.ReactElement => {
               >
                 Infórmate
               </Link>
-              <Link
+              <a
                 href="/docs/Dossier de JS a TS.pdf"
                 className="button button--outline button--large"
                 download
               >
                 Descarga el dossier
-              </Link>
+              </a>
             </div>
           </article>
         </li>
@@ -206,13 +206,13 @@ const Courses = (): React.ReactElement => {
               >
                 Infórmate
               </Link>
-              <Link
+              <a
                 href="/docs/Dossier TypeScript Avanzado.pdf"
                 className="button button--outline button--large"
                 download
               >
                 Descarga el dossier
-              </Link>
+              </a>
             </div>
           </article>
         </li>
@@ -252,13 +252,13 @@ const Courses = (): React.ReactElement => {
               >
                 Infórmate
               </Link>
-              <Link
+              <a
                 href="/docs/Dossier Desarrollo con Angular.pdf"
                 className="button button--outline button--large"
                 download
               >
                 Descarga el dossier
-              </Link>
+              </a>
             </div>
           </article>
         </li>
