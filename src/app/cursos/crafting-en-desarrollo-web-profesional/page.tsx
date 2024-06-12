@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import "./CraftingPage.scss";
 
 export const metadata: Metadata = {
   title:
