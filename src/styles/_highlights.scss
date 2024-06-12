@@ -1,0 +1,46 @@
+@use "./variables";
+@use "./flex";
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__text {
+    @include flex.vertical-flex;
+    gap: 30px;
+    color: variables.$color-secondary;
+    background-color: variables.$color-primary;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+
+    @media (width >= variables.$breakpoint-lg) {
+      flex-direction: row;
+      font-size: 1.2rem;
+    }
+
+    & :not(.highlights__icon) {
+      flex: 1;
+    }
+
+    > div p:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    width: 64px;
+
+    @media (width >= variables.$breakpoint-lg) {
+      width: 128px;
+    }
+  }
+}
+
+.accordion {
+  &__title {
+    margin-bottom: 10px;
+  }
+}
