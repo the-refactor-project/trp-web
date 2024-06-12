@@ -27,7 +27,7 @@ const Header = (): React.ReactElement => {
           />
         </a>
         <Burger isOpen={isBurgerOpen} toggleBurgerOpen={toggleBurgerOpen} />
-        <Nav isOpen={isBurgerOpen} />
+        <Nav isOpen={isBurgerOpen} toggleBurgerOpen={toggleBurgerOpen} />
       </div>
     </header>
   );

@@ -1,0 +1,24 @@
+@use "../../../styles/variables";
+
+.single-course {
+  &__cover {
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media (width >= variables.$breakpoint-lg) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (width >= variables.$breakpoint-lg) {
+        display: block;
+      }
+    }
+  }
+
+  .section__actions {
+    margin: 40px 0;
+  }
+}

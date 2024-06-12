@@ -13,7 +13,7 @@ const Events = (): React.ReactElement => {
               target="_blank"
             >
               <Image
-                src="/images/taller-introduccion-programacion.png"
+                src="/images/taller-introduccion-a-la-programacion.png"
                 alt="Taller Introducción a la Programación"
                 className="event__image"
                 width="611"
@@ -22,7 +22,7 @@ const Events = (): React.ReactElement => {
             </Link>
             <h2 className="event__name">Introducción a la Programación</h2>
             <div className="event__metadata">
-              <span className="event__date">8 de junio a las 10h</span>
+              <span className="event__date">19 de julio a las 10h</span>
               <span className="event__who">Con Mario González</span>
               <span className="event__type">Taller presencial</span>
               <span className="event__price">Gratis</span>
