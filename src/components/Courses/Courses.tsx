@@ -97,7 +97,7 @@ const Courses = (): React.ReactElement => {
                 <div className="course__data">
                   <dt className="course__data-name">Duración</dt>
                   <dd className="course__data-value">
-                    2 semanas self-paced
+                    2 semanas a tu ritmo
                     <br />
                     13 semanas clases en directo
                   </dd>
@@ -127,10 +127,10 @@ const Courses = (): React.ReactElement => {
         <li>
           <article className="course" id="typescript-avanzado">
             <Image
-              src="/images/curso-typescript-avanzado-gather.webp"
+              src="/images/Curso-De-JavaScript-a-TypeScript.png"
               width="653"
               height="325"
-              alt="Captura de Gather Town donde se ve el aula virtual"
+              alt="Curso De JavaScript a TypeScript"
               loading="lazy"
             />
             <h3 className="course__title">De JavaScript a TypeScript</h3>
@@ -173,10 +173,10 @@ const Courses = (): React.ReactElement => {
         <li>
           <article className="course" id="typescript-avanzado">
             <Image
-              src="/images/curso-typescript-avanzado-gather.webp"
+              src="/images/Curso-TypeScript-Avanzado.png"
               width="653"
               height="325"
-              alt="Captura de Gather Town donde se ve el aula virtual"
+              alt="Curso de TypeScript Avanzado"
               loading="lazy"
             />
             <h3 className="course__title">TypeScript Avanzado</h3>
@@ -219,10 +219,10 @@ const Courses = (): React.ReactElement => {
         <li>
           <article className="course">
             <Image
-              src="/images/curso-desarrollo-con-angular-gather.webp"
+              src="/images/Curso-Desarrollo-con-Angular.png"
               width="653"
               height="325"
-              alt="Captura de Gather Town donde se ve el aula virtual"
+              alt="Curso Desarrollo con Angular"
               loading="lazy"
             />
             <h3 className="course__title">Desarrollo con Angular</h3>
