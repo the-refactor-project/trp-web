@@ -1,17 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../Nav/Nav";
 import Burger from "../Burger/Burger";
 import "./Header.scss";
+import { usePathname } from "next/navigation";
 
 const Header = (): React.ReactElement => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleBurgerOpen = () => {
     setIsBurgerOpen((isBurgerOpen) => !isBurgerOpen);
   };
+
+  useEffect(() => {
+    setIsBurgerOpen(false);
+  }, [pathname]);
 
   return (
     <header className="main-header" data-testid="header">
