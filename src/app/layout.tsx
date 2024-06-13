@@ -1,8 +1,10 @@
+"use client";
+
 import { Roboto_Flex, Space_Grotesk } from "next/font/google";
-import { PropsWithChildren } from "react";
-import "../styles/index.scss";
+import { PropsWithChildren, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import "../styles/index.scss";
 
 const roboto = Roboto_Flex({
   subsets: ["latin"],

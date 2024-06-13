@@ -9,7 +9,7 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
-              href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/300413144/"
+              href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/301618995/"
               target="_blank"
             >
               <Image
@@ -22,7 +22,7 @@ const Events = (): React.ReactElement => {
             </Link>
             <h2 className="event__name">Introducción a la Programación</h2>
             <div className="event__metadata">
-              <span className="event__date">19 de julio a las 10h</span>
+              <span className="event__date">20 de julio a las 10h</span>
               <span className="event__who">Con Mario González</span>
               <span className="event__type">Taller presencial</span>
               <span className="event__price">Gratis</span>
@@ -42,7 +42,7 @@ const Events = (): React.ReactElement => {
             </div>
             <div className="event__actions">
               <Link
-                href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/301043928/"
+                href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/301618995/"
                 target="_blank"
                 className="button button--solid"
               >
