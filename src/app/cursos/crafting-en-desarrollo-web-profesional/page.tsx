@@ -32,9 +32,8 @@ const CraftingPage = (): React.ReactElement => {
             height="533"
           />
           <p className="section__subtitle">
-            Más que un
-            <strong>bootcamp de programación </strong>. Un curso que te llevará{" "}
-            <strong>desde cero</strong> al nivel que buscan las{" "}
+            Más que un <strong>bootcamp de programación</strong>. Un curso que
+            te llevará <strong>desde cero</strong> al nivel que buscan las{" "}
             <strong>empresas de programación</strong> en un/a junior.
           </p>
           <p className="section__subtitle">

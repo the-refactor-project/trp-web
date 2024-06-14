@@ -78,7 +78,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
           </svg>
         </a>
         {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
-        <img src="https://tracker.metricool.com/c3po.jpg?hash=d25fed14ebd91b29c9f60f355be7b00" />
+        <img
+          src="https://tracker.metricool.com/c3po.jpg?hash=d25fed14ebd91b29c9f60f355be7b00"
+          style={{ position: "fixed" }}
+        />
       </body>
     </html>
   );
