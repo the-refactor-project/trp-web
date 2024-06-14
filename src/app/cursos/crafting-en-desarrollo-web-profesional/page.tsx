@@ -60,8 +60,8 @@ const CraftingPage = (): React.ReactElement => {
             <ul className="block__items">
               <li className="block__item">
                 <Image
-                  src="/images/mixer.webp"
-                  alt="Primer plano de una mesa de mezclas"
+                  src="/images/programando-formulario-registro.webp"
+                  alt="Alumno desarrollando un formulario de registro"
                   className="block__image"
                   loading="lazy"
                   width="360"
@@ -75,8 +75,8 @@ const CraftingPage = (): React.ReactElement => {
               </li>
               <li className="block__item">
                 <Image
-                  src="/images/computer.webp"
-                  alt="Un teclado de ordenador y un ratón"
+                  src="/images/teacher-pointing-out-code.webp"
+                  alt="Profesor enseñando código JavaScript en una pantalla"
                   className="block__image"
                   loading="lazy"
                   width="360"
@@ -84,14 +84,14 @@ const CraftingPage = (): React.ReactElement => {
                 />
                 <p className="block__item-text">
                   Si ya programabas pero quieres aprender{" "}
-                  <strong>las buenas prácticas</strong> y los
+                  <strong>las buenas prácticas</strong> y los{" "}
                   <strong>principios de programación</strong>.
                 </p>
               </li>
               <li className="block__item">
                 <Image
-                  src="/images/team.webp"
-                  alt="Un grupo de personas mirando la pantalla de un portátil"
+                  src="/images/equipo.webp"
+                  alt="Un grupo de developers alrededor de una mesa"
                   className="block__image"
                   loading="lazy"
                   width="360"
@@ -119,8 +119,8 @@ const CraftingPage = (): React.ReactElement => {
               finalizarlo antes del domingo por la noche.{" "}
               <strong>4 semanas, 4 retos</strong>. A lo largo de este módulo
               iremos calentando motores para ir trabajando las bases del
-              desarrollo web con TypeScript. También irás conociendo al equipo a
-              través de nuestro canal de Discord.
+              <strong>desarrollo web con TypeScript</strong>. También irás
+              conociendo al equipo a través de nuestro canal de Discord.
             </p>
             <p className="block__text">
               En el módulo 2 del curso ya estamos a <strong>full time</strong> y
