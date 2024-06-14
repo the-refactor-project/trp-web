@@ -79,8 +79,8 @@ const CraftingPage = (): React.ReactElement => {
                   alt="Profesor enseñando código JavaScript en una pantalla"
                   className="block__image"
                   loading="lazy"
-                  width="360"
-                  height="200"
+                  width="720"
+                  height="400"
                 />
                 <p className="block__item-text">
                   Si ya programabas pero quieres aprender{" "}
@@ -94,8 +94,8 @@ const CraftingPage = (): React.ReactElement => {
                   alt="Un grupo de developers alrededor de una mesa"
                   className="block__image"
                   loading="lazy"
-                  width="360"
-                  height="200"
+                  width="720"
+                  height="400"
                 />
                 <p className="block__item-text">
                   Si vienes de producto y quieres aprender a{" "}

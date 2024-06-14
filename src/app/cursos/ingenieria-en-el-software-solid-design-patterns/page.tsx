@@ -60,18 +60,18 @@ const SolidPage = (): React.ReactElement => {
             <ul className="block__items">
               <li className="block__item">
                 <Image
-                  src="/images/inseguro.webp"
-                  alt="Persona con cara de inseguridad ante su portátil"
+                  src="/images/tdd.webp"
+                  alt="Formadora explicando TDD en una pizarra"
                   className="block__image"
                   loading="lazy"
-                  width="360"
-                  height="200"
+                  width="720"
+                  height="400"
                 />
                 <p className="block__item-text">
                   Si ya sabes programar pero sientes que{" "}
                   <strong>los/as demás saben más que tú</strong>. Este curso te
                   dará las bases que necesitas para{" "}
-                  <strong>sentirte seguro/a</strong>
+                  <strong>sentirte seguro/a</strong>.
                 </p>
               </li>
               <li className="block__item">
@@ -91,16 +91,16 @@ const SolidPage = (): React.ReactElement => {
               </li>
               <li className="block__item">
                 <Image
-                  src="/images/team.webp"
-                  alt=""
+                  src="/images/developer-girl.webp"
+                  alt="Chica de espaldas programando en un portátil"
                   className="block__image"
                   loading="lazy"
-                  width="360"
-                  height="200"
+                  width="720"
+                  height="400"
                 />
                 <p className="block__item-text">
                   Si quieres aplicar a <strong>posiciones de más nivel</strong>{" "}
-                  o<strong>impulsar tu carrera</strong> dentro de tu empresa.
+                  o <strong>impulsar tu carrera</strong> dentro de tu empresa.
                 </p>
               </li>
             </ul>
