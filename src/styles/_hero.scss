@@ -47,6 +47,20 @@
           font-size: 2rem;
         }
       }
+
+      &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (width >= variables.$breakpoint-lg) {
+          flex-direction: row;
+        }
+
+        .button {
+          width: 165px;
+        }
+      }
     }
   }
 }

@@ -42,12 +42,17 @@ export default function HomePage() {
                 mira.
               </p>
             </div>
-            <Link
-              href="/cursos/crafting-en-desarrollo-web-profesional"
-              className="button button--outline"
-            >
-              Más información
-            </Link>
+            <div className="hero__actions">
+              <Link
+                href="/cursos/crafting-en-desarrollo-web-profesional"
+                className="button button--outline"
+              >
+                Más información
+              </Link>
+              <Link href="#opiniones" className="button button--outline">
+                Opiniones
+              </Link>
+            </div>
           </div>
         </div>
       </section>
