@@ -9,6 +9,53 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
+              href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/301711330/"
+              target="_blank"
+            >
+              <Image
+                src="/images/taller-ux-ui.png"
+                alt="Taller Fundamentos de UX/UI para developers"
+                className="event__image"
+                width="611"
+                height="304"
+              />
+            </Link>
+            <h2 className="event__name">
+              Fundamentos de UX/UI para developers
+            </h2>
+            <div className="event__metadata">
+              <span className="event__date">29 de junio a las 10h</span>
+              <span className="event__who">Con Mario González</span>
+              <span className="event__type">Taller presencial</span>
+              <span className="event__price">Gratis</span>
+            </div>
+            <div className="event__description">
+              <p>
+                Taller dirigido a developers que tocan front y que quieren
+                entender mejor esa zona de intersección entre diseñadores/as y
+                developers.
+              </p>
+              <p>
+                Design tokens, figma, tipografías, paletas de colores,
+                antipatrones en UI, buenas prácticas en formularios,
+                accesibilidad... Repasaremos conceptos y herramientas que nos
+                son útiles a la hora de trabajar en el front.
+              </p>
+            </div>
+            <div className="event__actions">
+              <Link
+                href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/301711330/"
+                target="_blank"
+                className="button button--solid"
+              >
+                Inscríbete
+              </Link>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article className="event">
+            <Link
               href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/301618995/"
               target="_blank"
             >
@@ -67,7 +114,7 @@ const Events = (): React.ReactElement => {
             </Link>
             <h2 className="event__name">Dockeriza tu aplicación</h2>
             <div className="event__metadata">
-              <span className="event__date">15 de junio a las 10h</span>
+              <span className="event__date">Fecha por determinar</span>
               <span className="event__who">Con Benjamin Rae</span>
               <span className="event__type">Taller presencial</span>
               <span className="event__price">18€</span>

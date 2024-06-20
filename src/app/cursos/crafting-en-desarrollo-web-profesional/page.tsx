@@ -118,7 +118,7 @@ const CraftingPage = (): React.ReactElement => {
               te abrirá un reto que tiene diferentes entregas, y tendrás que
               finalizarlo antes del domingo por la noche.{" "}
               <strong>4 semanas, 4 retos</strong>. A lo largo de este módulo
-              iremos calentando motores para ir trabajando las bases del
+              iremos calentando motores para ir trabajando las bases del{" "}
               <strong>desarrollo web con TypeScript</strong>. También irás
               conociendo al equipo a través de nuestro canal de Discord.
             </p>
@@ -153,10 +153,9 @@ const CraftingPage = (): React.ReactElement => {
                 <div>
                   <p>
                     En <strong>The Refactor Project</strong> estamos
-                    constantemente
-                    <strong>en contacto con las empresas</strong> del sector
-                    para ir ajustando nuestros programas a lo que el mercado
-                    necesita.
+                    constantemente <strong>en contacto con las empresas</strong>{" "}
+                    del sector para ir ajustando nuestros programas a lo que el
+                    mercado necesita.
                   </p>
                   <p>
                     Es por esta razón que cuando finalices el curso tendrás un

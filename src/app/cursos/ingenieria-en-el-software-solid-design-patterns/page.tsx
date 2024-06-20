@@ -33,9 +33,9 @@ const SolidPage = (): React.ReactElement => {
           />
           <p className="section__subtitle">
             Un curso que te va a permitir{" "}
-            <strong>impulsar tu carerra de developer</strong>
-            completando tus conocimientos con las bases necesarias para
-            desarrollar grandes aplicaciones.
+            <strong>impulsar tu carerra de developer</strong> completando tus
+            conocimientos con las bases necesarias para desarrollar grandes
+            aplicaciones.
           </p>
           <p className="section__subtitle">
             <strong>Próxima edición en septiembre</strong>.
@@ -122,7 +122,7 @@ const SolidPage = (): React.ReactElement => {
                     En <strong>The Refactor Project</strong> conocemos muy bien
                     la sensación que tienes si has estudiado un FP o un bootcamp
                     y sientes que te falta conocimiento de fundamentos de
-                    programación para poder
+                    programación para poder{" "}
                     <strong>desarrollar aplicaciones de gran tamaño</strong>.
                   </p>
                   <p>
