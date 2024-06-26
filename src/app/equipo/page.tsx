@@ -114,24 +114,26 @@ const StaffPage = (): React.ReactElement => {
                 <article className="member">
                   <div className="member__picture">
                     <Image
-                      src="/images/judit-vives.webp"
-                      alt="Judit Vives"
+                      src="/images/marianella-bruzzo.webp"
+                      alt="Marianella Bruzzo"
                       width="200"
                       height="200"
                     />
-                    <h3 className="member__name">Judit Vives</h3>
+                    <h3 className="member__name">Marianella Bruzzo</h3>
                     <p className="member__role">Campus Manager</p>
                   </div>
                   <p className="member__description">
-                    Siempre he tenido una mente inquieta, y como el saber no
-                    ocupa lugar, decidí adentrarme en el mundo de la
-                    programación, donde descubrí una pasión inesperada por ella.
-                    Con experiencia, puedo afirmar que, con determinación y una
-                    buena guía, es posible consolidarse como un buen programador
-                    en poco tiempo. Aun así, continúo aprendiendo cada día.
+                    Desde siempre he sido una apasionada de la comunicación en
+                    todas sus formas. Por ello, he buscado continuamente
+                    involucrarme en actividades que me brinden nuevos
+                    conocimientos y herramientas para mejorar mi capacidad de
+                    diálogo. Mi lema es &quot;la curiosidad como motor&quot;, y
+                    con este espíritu, estaré a tu lado en la escuela para
+                    apoyarte en tu emocionante camino de aprendizaje en el mundo
+                    de la programación.
                   </p>
                   <Link
-                    href="https://www.linkedin.com/in/jvivesramon"
+                    href="https://www.linkedin.com/in/marianellabruzzoin"
                     target="_blank"
                     rel="noopener"
                     className="member__link"
