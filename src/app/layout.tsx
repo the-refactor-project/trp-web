@@ -1,9 +1,10 @@
 "use client";
 
 import { Roboto_Flex, Space_Grotesk } from "next/font/google";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import TopBar from "../components/TopBar/TopBar";
 import "../styles/index.scss";
 
 const roboto = Roboto_Flex({
@@ -19,9 +20,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export default function RootLayout({ children }: PropsWithChildren) {
+  const [isTopBarOpen, setIsTopBarOpen] = useState(true);
+
   return (
     <html lang="es" className={`${roboto.variable} ${spaceGrotesk.variable}`}>
-      <body>
+      <body className={isTopBarOpen ? "top-bar-open" : ""}>
+        {isTopBarOpen && <TopBar onClose={() => setIsTopBarOpen(false)} />}
         <Header />
         {children}
         <Footer />

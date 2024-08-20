@@ -5,12 +5,13 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -400px;
+  top: -480px;
   background-color: variables.$color-secondary;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.2rem;
   transition: top 0.2s;
+  z-index: 5;
 
   &--open {
     top: variables.$header-height;
@@ -56,4 +57,8 @@
       }
     }
   }
+}
+
+.top-bar-open .main-navigation--open {
+  top: variables.$header-height + variables.$topbar-height;
 }

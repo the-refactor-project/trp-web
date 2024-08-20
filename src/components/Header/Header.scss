@@ -1,9 +1,6 @@
 @use "../../styles/variables";
 
 .main-header {
-  position: fixed;
-  left: 0;
-  right: 0;
   height: variables.$header-height;
   background-color: #fff;
   box-shadow: 0 0 15px #ddd;

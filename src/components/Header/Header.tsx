@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Nav from "../Nav/Nav";
 import Burger from "../Burger/Burger";
-import "./Header.scss";
 import { usePathname } from "next/navigation";
+import "./Header.scss";
 
 const Header = (): React.ReactElement => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);

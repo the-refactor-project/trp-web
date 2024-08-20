@@ -11,6 +11,11 @@
     opacity: 0.2;
   }
 
+  &--small {
+    font-size: 0.8rem;
+    padding: 5px 15px;
+  }
+
   &--large {
     min-width: 180px;
   }
