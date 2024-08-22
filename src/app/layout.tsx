@@ -1,5 +1,7 @@
 "use client";
 
+import * as amplitude from "@amplitude/analytics-browser";
+import { sessionReplayPlugin } from "@amplitude/plugin-session-replay-browser";
 import { Roboto_Flex, Space_Grotesk } from "next/font/google";
 import { PropsWithChildren, useState } from "react";
 import Header from "../components/Header/Header";
@@ -18,6 +20,10 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
   variable: "--font-space-grotesk",
 });
+
+const sessionReplayTracking = sessionReplayPlugin();
+amplitude.add(sessionReplayTracking);
+amplitude.init("43db83903e96a8014e8ec6f7540da500");
 
 export default function RootLayout({ children }: PropsWithChildren) {
   const [isTopBarOpen, setIsTopBarOpen] = useState(true);
