@@ -1,8 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./Courses.scss";
+import CourseCard, { Course } from "../CourseCard/CourseCard";
 
 const Courses = (): React.ReactElement => {
+  const typeScriptCourse: Course = {
+    id: "de-js-a-ts",
+    title: "De JavaScript a TypeScript",
+    image: "Curso-De-JavaScript-a-TypeScript.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier de JS a TS.pdf",
+  };
+  const advancedTypeScriptCourse: Course = {
+    id: "typescript-avanzado",
+    title: "TypeScript Avanzado",
+    image: "Curso-TypeScript-Avanzado.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier TypeScript Avanzado.pdf",
+  };
+  const frontendTestingCourse: Course = {
+    id: "testing-en-front",
+    title: "Testing en el Front",
+    image: "Curso-Testing-Front.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier Testing en el Front.pdf",
+  };
+  const sqlCourse: Course = {
+    id: "fundamentos-sql",
+    title: "Fundamentos de SQL",
+    image: "Curso-Fundamentos-SQL.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier Fundamentos de SQL.pdf",
+  };
+
   return (
     <section className="section courses" id="cursos" data-testid="courses">
       <h2 className="section__title">Nuestros cursos</h2>
@@ -125,142 +159,16 @@ const Courses = (): React.ReactElement => {
           </article>
         </li>
         <li>
-          <article className="course" id="typescript-avanzado">
-            <Image
-              src="/images/Curso-De-JavaScript-a-TypeScript.png"
-              width="653"
-              height="325"
-              alt="Curso De JavaScript a TypeScript"
-              loading="lazy"
-            />
-            <h3 className="course__title">De JavaScript a TypeScript</h3>
-            <dl className="course__data-list">
-              <div className="course__data">
-                <dt className="course__data-name">Formato online</dt>
-                <dd className="course__data-value">
-                  En la plataforma{" "}
-                  <Link href="https://www.gather.town/" target="_blank">
-                    Gather
-                  </Link>
-                </dd>
-              </div>
-              <div className="course__data">
-                <dt className="course__data-name">Duración</dt>
-                <dd className="course__data-value">
-                  12 horas
-                  <br />
-                  (4 sesiones de 3 horas)
-                </dd>
-              </div>
-            </dl>
-            <div className="section__actions">
-              <Link
-                href="/contacto"
-                className="button button--solid button--large"
-              >
-                Infórmate
-              </Link>
-              <a
-                href="/docs/Dossier de JS a TS.pdf"
-                className="button button--outline button--large"
-                download
-              >
-                Descarga el dossier
-              </a>
-            </div>
-          </article>
+          <CourseCard course={typeScriptCourse} />
         </li>
         <li>
-          <article className="course" id="typescript-avanzado">
-            <Image
-              src="/images/Curso-TypeScript-Avanzado.png"
-              width="653"
-              height="325"
-              alt="Curso de TypeScript Avanzado"
-              loading="lazy"
-            />
-            <h3 className="course__title">TypeScript Avanzado</h3>
-            <dl className="course__data-list">
-              <div className="course__data">
-                <dt className="course__data-name">Formato online</dt>
-                <dd className="course__data-value">
-                  En la plataforma{" "}
-                  <Link href="https://www.gather.town/" target="_blank">
-                    Gather
-                  </Link>
-                </dd>
-              </div>
-              <div className="course__data">
-                <dt className="course__data-name">Duración</dt>
-                <dd className="course__data-value">
-                  12 horas
-                  <br />
-                  (4 sesiones de 3 horas)
-                </dd>
-              </div>
-            </dl>
-            <div className="section__actions">
-              <Link
-                href="/contacto"
-                className="button button--solid button--large"
-              >
-                Infórmate
-              </Link>
-              <a
-                href="/docs/Dossier TypeScript Avanzado.pdf"
-                className="button button--outline button--large"
-                download
-              >
-                Descarga el dossier
-              </a>
-            </div>
-          </article>
+          <CourseCard course={advancedTypeScriptCourse} />
         </li>
         <li>
-          <article className="course">
-            <Image
-              src="/images/Curso-Desarrollo-con-Angular.png"
-              width="653"
-              height="325"
-              alt="Curso Desarrollo con Angular"
-              loading="lazy"
-            />
-            <h3 className="course__title">Desarrollo con Angular</h3>
-            <dl className="course__data-list">
-              <div className="course__data">
-                <dt className="course__data-name">Formato online</dt>
-                <dd className="course__data-value">
-                  En la plataforma{" "}
-                  <Link href="https://www.gather.town/" target="_blank">
-                    Gather
-                  </Link>
-                </dd>
-              </div>
-              <div className="course__data">
-                <dt className="course__data-name">Duración</dt>
-                <dd className="course__data-value">
-                  12 horas
-                  <br />
-                  (4 sesiones de 3 horas)
-                </dd>
-              </div>
-            </dl>
-            <div className="section__actions">
-              <Link
-                href="/contacto"
-                className="button button--solid button--large"
-              >
-                Infórmate
-              </Link>
-              <a
-                href="/docs/Dossier Desarrollo con Angular.pdf"
-                className="button button--outline button--large"
-                download
-              >
-                Descarga el dossier
-              </a>
-            </div>
-          </article>
+          <CourseCard course={frontendTestingCourse} />
+        </li>
+        <li>
+          <CourseCard course={sqlCourse} />
         </li>
       </ul>
     </section>
