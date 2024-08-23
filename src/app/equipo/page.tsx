@@ -38,9 +38,9 @@ const StaffPage = (): React.ReactElement => {
                   <p className="member__description">
                     He acompañado tanto a equipos de desarrollo en las empresas,
                     como a alumnos de programación que querían empezar o
-                    especializarse. Llevo años preguntándome cada día si me
-                    gusta más mi trabajo de web developer o de formador. Aún no
-                    tengo la respuesta.
+                    especializarse. Siempre mentorizo poniendo el foco en la
+                    calidad y las buenas prácticas. Aún no sé si me gusta más
+                    programar o enseñar a programar.
                   </p>
                   <Link
                     href="https://www.linkedin.com/in/mariogl/"
