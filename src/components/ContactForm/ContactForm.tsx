@@ -1,10 +1,8 @@
 "use client";
-
 import Link from "next/link";
-import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 
-interface ContactData {
+export interface ContactData {
   email: string;
   phone: string;
   name: string;
@@ -27,10 +25,6 @@ const ContactForm = (): React.ReactElement => {
 
   const isFormValid = formRef.current?.checkValidity();
 
-  useEffect(() => {
-    emailjs.init("grdFnJ-ot5fQpyAI7");
-  }, []);
-
   const changeContactData = (
     event: ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -46,13 +40,20 @@ const ContactForm = (): React.ReactElement => {
   };
 
   const submitForm = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault;
+    event.preventDefault();
 
     if (!isFormValid) {
       return;
     }
 
-    try {
+    /* await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        body: JSON.stringify(contactData),
+      },
+    }); */
+    /* try {
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -76,7 +77,7 @@ const ContactForm = (): React.ReactElement => {
       );
     } catch (error) {
       console.log((error as Error).message);
-    }
+    } */
 
     formRef.current?.submit();
   };
