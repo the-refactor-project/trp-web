@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import "./ContactForm.css";
 
 export interface ContactData {
   email: string;
@@ -12,6 +13,7 @@ export interface ContactData {
 }
 
 const ContactForm = (): React.ReactElement => {
+  const [sendingError, setSendingError] = useState(false);
   const [contactData, setContactData] = useState<ContactData>({
     email: "",
     phone: "",
@@ -46,38 +48,25 @@ const ContactForm = (): React.ReactElement => {
       return;
     }
 
-    /* await fetch("/api/contact", {
+    const body = JSON.stringify(contactData);
+
+    console.log("Voy");
+
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        body: JSON.stringify(contactData),
       },
-    }); */
-    /* try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        {
-          name: contactData.name,
-          email: contactData.email,
-          phone: contactData.phone,
-          course: contactData.course,
-          message: contactData.message,
-          privacy: contactData.privacy,
-        },
-      );
+      body,
+    });
 
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_AUTO_ID!,
-        {
-          name: contactData.name,
-          email: contactData.email,
-        },
-      );
-    } catch (error) {
-      console.log((error as Error).message);
-    } */
+    if (!response.ok) {
+      setSendingError(true);
+
+      setTimeout(() => {
+        setSendingError(false);
+      }, 3000);
+    }
 
     formRef.current?.submit();
   };
@@ -210,13 +199,14 @@ const ContactForm = (): React.ReactElement => {
           </div>
           <div className="form__group">
             <label htmlFor="message" className="form__label">
-              ¿Quieres añadir algo más? (opcional)
+              Deja tus comentarios
             </label>
             <textarea
               name="MERGE3"
               id="message"
               className="form__control"
               rows={5}
+              required
               value={contactData.message}
               onChange={changeContactData}
             ></textarea>
@@ -236,15 +226,22 @@ const ContactForm = (): React.ReactElement => {
               </Link>
             </label>
           </div>
-          <div className="form__submit">
-            <button
-              className="button button--outline button--full"
-              type="submit"
-              disabled={!isFormValid}
-            >
-              Enviar
-            </button>
-          </div>
+          {sendingError ? (
+            <div className="error">
+              Lo sentimos, ha habido un error. Vuelve a intentar enviar el
+              formulario dentro de unos minutos.
+            </div>
+          ) : (
+            <div className="form__submit">
+              <button
+                className="button button--outline button--full"
+                type="submit"
+                disabled={!isFormValid}
+              >
+                Enviar
+              </button>
+            </div>
+          )}
         </form>
       </section>
       <section className="section map">
