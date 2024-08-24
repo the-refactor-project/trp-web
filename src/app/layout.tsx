@@ -22,8 +22,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const sessionReplayTracking = sessionReplayPlugin();
-amplitude.add(sessionReplayTracking);
-amplitude.init("43db83903e96a8014e8ec6f7540da500");
+if (typeof window !== "undefined" && !document.cookie.includes("jomateix=")) {
+  amplitude.add(sessionReplayTracking);
+  amplitude.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!);
+}
 
 export default function RootLayout({ children }: PropsWithChildren) {
   const [isTopBarOpen, setIsTopBarOpen] = useState(true);
