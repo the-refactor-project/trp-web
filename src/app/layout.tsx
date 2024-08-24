@@ -22,7 +22,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const sessionReplayTracking = sessionReplayPlugin();
-if (typeof window !== "undefined" && !document.cookie.includes("jomateix=")) {
+if (
+  typeof window !== "undefined" &&
+  !document.cookie.includes("jomateix=") &&
+  document.location.hostname !== "localhost"
+) {
   amplitude.add(sessionReplayTracking);
   amplitude.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!);
 }
