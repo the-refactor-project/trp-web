@@ -1,6 +1,7 @@
 "use client";
+import * as amplitude from "@amplitude/analytics-browser";
 import Link from "next/link";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import "./ContactForm.css";
 
 export interface ContactData {
@@ -69,7 +70,15 @@ const ContactForm = (): React.ReactElement => {
     }
 
     formRef.current?.submit();
+
+    amplitude.logEvent("Enviado formulario de contacto", {
+      course: contactData.course,
+    });
   };
+
+  useEffect(() => {
+    amplitude.logEvent("Visitado formulario de contacto");
+  }, []);
 
   return (
     <>

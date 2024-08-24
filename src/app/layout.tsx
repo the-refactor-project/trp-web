@@ -28,7 +28,12 @@ if (
   document.location.hostname !== "localhost"
 ) {
   amplitude.add(sessionReplayTracking);
-  amplitude.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!);
+  amplitude.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY!, {
+    autocapture: {
+      attribution: true,
+      elementInteractions: true,
+    },
+  });
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
