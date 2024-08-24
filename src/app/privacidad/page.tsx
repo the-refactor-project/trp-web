@@ -14,16 +14,16 @@ const PrivacyPage = (): React.ReactElement => {
           <p>&nbsp;</p>
           <h4>1.- OBJETIVO DE LA POLÍTICA DE PRIVACIDAD</h4>
           <p>
-            La presente "Política de Privacidad y Protección de Datos" tiene
-            como finalidad dar a conocer las condiciones que rigen la recogida y
-            tratamiento de los datos personales por parte de The Refactor
-            Project S.L.U, haciendo el máximo esfuerzo para velar por los
-            derechos fundamentales, el honor y libertades de las personas de las
-            que se tratan datos personales cumplimiento las normativas y leyes
-            vigentes que regulan la Protección de Datos personales según la
-            Unión Europea y el Estado Miembro español y, en concreto, las
-            expresadas en el apartado "Actividades de Tratamientos" de esta
-            Política de Privacidad.
+            La presente &quot;Política de Privacidad y Protección de Datos&quot;
+            tiene como finalidad dar a conocer las condiciones que rigen la
+            recogida y tratamiento de los datos personales por parte de The
+            Refactor Project S.L.U, haciendo el máximo esfuerzo para velar por
+            los derechos fundamentales, el honor y libertades de las personas de
+            las que se tratan datos personales cumplimiento las normativas y
+            leyes vigentes que regulan la Protección de Datos personales según
+            la Unión Europea y el Estado Miembro español y, en concreto, las
+            expresadas en el apartado &quot;Actividades de Tratamientos&quot; de
+            esta Política de Privacidad.
           </p>
           <p>
             Por todo lo cual, en esta Política de Privacidad y Protección de
@@ -36,12 +36,12 @@ const PrivacyPage = (): React.ReactElement => {
           <h4>2.- DEICIONES</h4>
           <p>
             <strong>«Datos personales»</strong>: Toda información sobre una
-            persona física identificada o identificable ("el usuario del
-            Website"); se considerará persona física identificable toda persona
-            cuya identidad pueda determinarse, directa o indirectamente, en
-            particular mediante un identificador, como por ejemplo un nombre, un
-            número de identificación, datos de localización, un identificador en
-            línea o uno o varios elementos propios de la identidad física,
+            persona física identificada o identificable (&quot;el usuario del
+            Website&quot;); se considerará persona física identificable toda
+            persona cuya identidad pueda determinarse, directa o indirectamente,
+            en particular mediante un identificador, como por ejemplo un nombre,
+            un número de identificación, datos de localización, un identificador
+            en línea o uno o varios elementos propios de la identidad física,
             fisiológica, genética, psíquica, económica, cultural o social de
             dicha persona.
           </p>
@@ -552,8 +552,8 @@ const PrivacyPage = (): React.ReactElement => {
             </li>
             <li>
               <strong>Derecho de supresión</strong>: Suele conocerse como
-              "derecho al olvido", y es el derecho que el usuario del Website
-              tiene, siempre que la legislación vigente no establezca lo
+              &quot;derecho al olvido&quot;, y es el derecho que el usuario del
+              Website tiene, siempre que la legislación vigente no establezca lo
               contrario, a obtener la supresión de sus datos personales cuando
               estos ya no sean necesarios para los fines para los cuales fueron
               recogidos o tratados; el Usuario haya retirado su consentimiento

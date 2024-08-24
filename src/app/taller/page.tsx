@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -54,10 +55,11 @@ const IntroWorkshop = (): React.ReactElement => {
             </p>
           </div>
           <h3>Chuleta JavaScript:</h3>
-          <img
+          <Image
             src="/images/cheatsheet-taller.png"
             alt="Chuleta taller"
-            width="500"
+            width={500}
+            height={575}
           />
         </section>
       </div>
