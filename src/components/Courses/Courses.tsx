@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import * as amplitude from "@amplitude/analytics-browser";
 import "./Courses.scss";
 import CourseCard, { Course } from "../CourseCard/CourseCard";
 
@@ -35,6 +38,10 @@ const Courses = (): React.ReactElement => {
     hours: 12,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Fundamentos de SQL.pdf",
+  };
+
+  const registerDownload = (course: string) => {
+    amplitude.logEvent("Clicado download del dossier de " + course);
   };
 
   return (
@@ -93,6 +100,9 @@ const Courses = (): React.ReactElement => {
                 <a
                   href="/docs/Dossier Crafting en Desarrollo Web Profesional.pdf"
                   className="button button--outline button--large"
+                  onClick={() =>
+                    registerDownload("Crafting en Desarrollo Web Profesional")
+                  }
                   download
                 >
                   Descarga el dossier
@@ -150,6 +160,11 @@ const Courses = (): React.ReactElement => {
                 <a
                   href="/docs/Dossier Ingeniería en el Software SOLID & Design Patterns.pdf"
                   className="button button--outline button--large"
+                  onClick={() =>
+                    registerDownload(
+                      "Ingeniería en el Software SOLID & Design Patterns",
+                    )
+                  }
                   download
                 >
                   Descarga el dossier
