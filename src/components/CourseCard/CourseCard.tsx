@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import * as amplitude from "@amplitude/analytics-browser";
 
 export interface Course {
   id: string;
@@ -17,6 +20,10 @@ interface CourseCardProps {
 const CourseCard = ({
   course: { id, title, image, hours, sessions, document },
 }: CourseCardProps): React.ReactElement => {
+  const registerEvent = () => {
+    amplitude.logEvent("Clicado download del dossier de " + title);
+  };
+
   return (
     <article className="course" id={id}>
       <Image
@@ -53,6 +60,7 @@ const CourseCard = ({
           href={`/docs/${document}`}
           className="button button--outline button--large"
           download
+          onClick={registerEvent}
         >
           Descarga el dossier
         </a>
