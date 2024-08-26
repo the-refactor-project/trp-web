@@ -9,6 +9,47 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
+              href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303059793"
+              target="_blank"
+            >
+              <Image
+                src="/images/Clase gratuita de TypeScript Avanzado.png"
+                alt="Clase gratuita de TypeScript Avanzado"
+                className="event__image"
+                width="611"
+                height="304"
+              />
+            </Link>
+            <h2 className="event__name">
+              Clase gratuita de TypeScript Avanzado
+            </h2>
+            <div className="event__metadata">
+              <span className="event__date">28 de agosto a las 19h</span>
+              <span className="event__who">Con Mario González</span>
+              <span className="event__type">Clase en directo</span>
+              <span className="event__price">Gratis</span>
+            </div>
+            <div className="event__description">
+              <p>
+                Clase en directo abierta para quien quiera asistir. Pensada para
+                quienes ya han trabajado con TypeScript y quieren ver cómo
+                aplicar tipados más complejos.
+              </p>
+            </div>
+            <div className="event__actions">
+              <Link
+                href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303059793"
+                target="_blank"
+                className="button button--solid"
+              >
+                Inscríbete
+              </Link>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article className="event">
+            <Link
               href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/301711330/"
               target="_blank"
             >
