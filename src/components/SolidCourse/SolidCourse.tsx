@@ -36,7 +36,7 @@ const SolidCourse = (): React.ReactElement => {
           aplicaciones.
         </p>
         <p className="section__subtitle">
-          <strong>Próxima edición en septiembre</strong>.
+          <strong>Plazas abiertas</strong>.
         </p>
         <p className="section__subtitle">
           Esta formación es <strong>bonificable por Fundae</strong>.
