@@ -1,7 +1,6 @@
 import crypto from "node:crypto";
 import mailchimp, { searchMembers } from "@mailchimp/mailchimp_marketing";
-import { ContactData } from "../../components/ContactForm/ContactForm";
-import { ContactsClientStructure } from "./types";
+import { ContactData, ContactsClientStructure } from "./types";
 
 mailchimp.setConfig({
   apiKey: process.env.NEXT_PUBLIC_MAILCHIMP_API_KEY,
