@@ -140,6 +140,20 @@ const ContactForm = (): React.ReactElement => {
           </div>
         </form>
       </section>
+      <section className="section map">
+        <h2 className="section__title" id="donde-estamos">
+          ¿Dónde estamos?
+        </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.4875960748004!2d2.1567085!3d41.406933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6613a9245591fc23%3A0x7cad1d5fd476f369!2sThe%20Refactor%20Project!5e0!3m2!1ses!2ses!4v1711020295162!5m2!1ses!2ses"
+          width="800"
+          height="600"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </>
   );
 };
