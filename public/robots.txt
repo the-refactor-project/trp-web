@@ -5,4 +5,3 @@ Disallow: /privacidad
 Disallow: /aviso-legal
 Disallow: /taller
 Disallow: /taller-ux-ui
-Disallow: /contacto_
