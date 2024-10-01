@@ -9,6 +9,51 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
+              href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/303762616"
+              target="_blank"
+            >
+              <Image
+                src="/images/taller-introduccion-a-la-programacion.png"
+                alt="Taller Introducción a la Programación Web"
+                className="event__image"
+                width="611"
+                height="304"
+              />
+            </Link>
+            <h2 className="event__name">Introducción a la Programación Web</h2>
+            <div className="event__metadata">
+              <span className="event__date">1 de octubre a las 10h</span>
+              <span className="event__who">Con Mario González</span>
+              <span className="event__type">Taller presencial</span>
+              <span className="event__price">Gratis</span>
+            </div>
+            <div className="event__description">
+              <p>
+                Taller para quienes estáis pensando en dedicaros a la
+                programación o simplemente queréis trastear con código, y no lo
+                habéis hecho nunca antes.
+              </p>
+              <p>
+                Si quieres empezar a aprender programación, apúntate a nuestro
+                taller gratuito presencial de Introducción a la Programación
+                Web, donde podrás empezar a jugar con JavaScript y ver qué
+                posibilidades ofrece esto de la programación.
+              </p>
+            </div>
+            <div className="event__actions">
+              <Link
+                href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/303762616"
+                target="_blank"
+                className="button button--solid"
+              >
+                Inscríbete
+              </Link>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article className="event">
+            <Link
               href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303230760"
               target="_blank"
             >
@@ -41,51 +86,6 @@ const Events = (): React.ReactElement => {
             <div className="event__actions">
               <Link
                 href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303230760"
-                target="_blank"
-                className="button button--solid"
-              >
-                Inscríbete
-              </Link>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article className="event">
-            <Link
-              href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303117519"
-              target="_blank"
-            >
-              <Image
-                src="/images/taller-introduccion-a-la-programacion.png"
-                alt="Taller Introducción a la Programación Web"
-                className="event__image"
-                width="611"
-                height="304"
-              />
-            </Link>
-            <h2 className="event__name">Introducción a la Programación Web</h2>
-            <div className="event__metadata">
-              <span className="event__date">14 de septiembre a las 10h</span>
-              <span className="event__who">Con Mario González</span>
-              <span className="event__type">Taller presencial</span>
-              <span className="event__price">Gratis</span>
-            </div>
-            <div className="event__description">
-              <p>
-                Taller para quienes estáis pensando en dedicaros a la
-                programación o simplemente queréis trastear con código, y no lo
-                habéis hecho nunca antes.
-              </p>
-              <p>
-                Si quieres empezar a aprender programación, apúntate a nuestro
-                taller gratuito presencial de Introducción a la Programación
-                Web, donde podrás empezar a jugar con JavaScript y ver qué
-                posibilidades ofrece esto de la programación.
-              </p>
-            </div>
-            <div className="event__actions">
-              <Link
-                href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/303117519"
                 target="_blank"
                 className="button button--solid"
               >
