@@ -22,7 +22,7 @@ const Events = (): React.ReactElement => {
             </Link>
             <h2 className="event__name">Introducción a la Programación Web</h2>
             <div className="event__metadata">
-              <span className="event__date">1 de octubre a las 10h</span>
+              <span className="event__date">19 de octubre a las 10h</span>
               <span className="event__who">Con Mario González</span>
               <span className="event__type">Taller presencial</span>
               <span className="event__price">Gratis</span>
