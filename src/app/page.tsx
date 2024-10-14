@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Courses from "../components/Courses/Courses";
 import Reviews from "../components/Reviews/Reviews";
-import "../styles/_hero.scss";
 import { Metadata } from "next";
+import HeroHome from "../components/HeroHome/HeroHome";
+import "../styles/_hero.scss";
 
 export const metadata: Metadata = {
   title:
@@ -15,46 +16,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="main-content">
-      <section
-        className="section section--full-viewport hero hero--home"
-        data-testid="hero"
-      >
-        <Image
-          className="hero__background"
-          src="/images/classroom.webp"
-          width="945"
-          height="630"
-          alt="Dos alumnos en el Bootcamp de Programación Web Full Stack"
-          priority
-        />
-        <div className="container">
-          <div className="hero__content">
-            <h2 className="section__title">
-              Bootcamp de Programación Web Full Stack
-            </h2>
-            <div className="hero__text">
-              <p>
-                ¿Quieres dedicarte a la programación y no tienes experiencia
-                previa?
-              </p>
-              <p>Entra y mira.</p>
-            </div>
-            <div className="hero__actions">
-              <Link
-                href="/cursos/bootcamp-de-programacion-web-full-stack"
-                className="button button--outline"
-              >
-                Más información
-              </Link>
-              <Link href="#opiniones" className="button button--outline">
-                Opiniones
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroHome />
       <div className="container">
-        <section className="section section--centered">
+        <section className="section section--centered section--discover">
           <h1 className="section__title">Descubre nuestros próximos cursos</h1>
           <div className="section__text">
             <p>
@@ -72,7 +36,10 @@ export default function HomePage() {
             </p>
           </div>
           <div className="section__actions">
-            <Link className="button button--solid button--large" href="/cursos">
+            <Link
+              className="button button--outline button--large"
+              href="/cursos"
+            >
               Mira los cursos
             </Link>
           </div>

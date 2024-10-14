@@ -113,6 +113,12 @@
     }
   }
 
+  &--discover {
+    background-color: variables.$color-primary;
+    color: variables.$color-secondary;
+    padding: 20px !important;
+  }
+
   @media (width >= variables.$breakpoint-lg) {
     padding: 80px 0;
   }
