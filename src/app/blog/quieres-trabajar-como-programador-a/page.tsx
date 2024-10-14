@@ -121,13 +121,13 @@ const BlogPost1Page = (): React.ReactElement => {
                 <strong>aprender los fundamentos de la programación</strong>.
               </p>
               <p>
-                Cuando diseñamos nuestro curso{" "}
+                Cuando diseñamos nuestro{" "}
                 <strong>
                   <Link
-                    href="/cursos/crafting-en-desarrollo-web-profesional"
+                    href="/cursos/bootcamp-de-programacion-web-full-stack"
                     target="_blank"
                   >
-                    Crafting en Desarrollo Web Profesional
+                    Bootcamp de Programación Web Full Stack
                   </Link>
                 </strong>{" "}
                 tomamos la decisión de que el curso iba a ser{" "}
@@ -143,7 +143,7 @@ const BlogPost1Page = (): React.ReactElement => {
                 software mucho más fiable.
               </p>
               <p>
-                En nuestro curso de Crafting estarás{" "}
+                En nuestro bootcamp de Full Stack estarás{" "}
                 <strong>testeando desde el principio</strong> y saldrás con una
                 base sólida que es difícil de encontrar entre los juniors que se
                 presentan a procesos de selección.

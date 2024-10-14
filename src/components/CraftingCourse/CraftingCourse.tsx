@@ -12,7 +12,7 @@ const CraftingCourse = (): React.ReactElement => {
     <>
       <section className="section single-course">
         <h1 className="section__title">
-          Crafting en Desarrollo Web Profesional
+          Bootcamp de Programación Web Full Stack
         </h1>
         <Image
           src="/images/programando-fondo.webp"
@@ -46,10 +46,10 @@ const CraftingCourse = (): React.ReactElement => {
             Infórmate
           </a>
           <a
-            href="/docs/Dossier Crafting en Desarrollo Web Profesional.pdf"
+            href="/docs/Dossier Bootcamp de Programacion Web Full Stack.pdf"
             className="button button--outline button--large"
             onClick={() =>
-              registerDownload("Crafting en Desarrollo Web Profesional")
+              registerDownload("Bootcamp de Programación Web Full Stack")
             }
             download
           >

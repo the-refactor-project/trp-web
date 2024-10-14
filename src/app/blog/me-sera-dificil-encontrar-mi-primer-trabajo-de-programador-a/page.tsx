@@ -321,12 +321,12 @@ const BlogPost2Page = (): React.ReactElement => {
                 un camino donde puedas aprender bien{" "}
                 <strong>la realidad y las prácticas de la profesión</strong>.
               </p>
-              <h2 id="nuestro-curso">Nuestro curso 😊</h2>
+              <h2 id="nuestro-bootcamp">Nuestro bootcamp 😊</h2>
               <p>
                 Si has elegido convertirte en el <strong>perfil B</strong>, en
-                The Refactor Project te invitamos a conocer nuestro curso{" "}
-                <Link href="/cursos/crafting-en-desarrollo-web-profesional">
-                  Crafting en Desarrollo Web Profesional
+                The Refactor Project te invitamos a conocer nuestro{" "}
+                <Link href="/cursos/bootcamp-de-programacion-web-full-stack">
+                  Bootcamp de Programación Web Full Stack
                 </Link>
                 <strong>
                   , donde el principal objetivo es convertirte en 4 meses en
@@ -379,8 +379,8 @@ const BlogPost2Page = (): React.ReactElement => {
               <p>
                 Un cambio de vida como el que buscas tiene que tener los
                 objetivos que te planteamos en este artículo. Mírate{" "}
-                <Link href="/cursos/crafting-en-desarrollo-web-profesional">
-                  nuestro curso
+                <Link href="/cursos/bootcamp-de-programacion-web-full-stack">
+                  nuestro bootcamp
                 </Link>{" "}
                 😉.
               </p>

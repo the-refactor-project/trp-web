@@ -96,7 +96,7 @@ const ContactForm = (): React.ReactElement => {
             </label>
             <select name="MERGE2" id="course" className="form__control">
               <option value="crafting">
-                Crafting en Desarrollo Web Profesional
+                Bootcamp de Programación Web Full Stack
               </option>
               <option value="engineering">
                 Ingeniería en el Software: SOLID & Design Patterns

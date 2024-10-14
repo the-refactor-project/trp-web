@@ -24,27 +24,24 @@ export default function HomePage() {
           src="/images/classroom.webp"
           width="945"
           height="630"
-          alt="Dos alumnos en el curso de Crafting de Desarrollo Web"
+          alt="Dos alumnos en el Bootcamp de Programación Web Full Stack"
           priority
         />
         <div className="container">
           <div className="hero__content">
             <h2 className="section__title">
-              Curso Crafting en Desarrollo Web Profesional
+              Bootcamp de Programación Web Full Stack
             </h2>
             <div className="hero__text">
               <p>
                 ¿Quieres dedicarte a la programación y no tienes experiencia
                 previa?
               </p>
-              <p>
-                Nuestro curso es <strong>más que un bootcamp</strong>. Entra y
-                mira.
-              </p>
+              <p>Entra y mira.</p>
             </div>
             <div className="hero__actions">
               <Link
-                href="/cursos/crafting-en-desarrollo-web-profesional"
+                href="/cursos/bootcamp-de-programacion-web-full-stack"
                 className="button button--outline"
               >
                 Más información

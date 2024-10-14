@@ -68,7 +68,7 @@ const Courses = (): React.ReactElement => {
             />
             <div className="course__info">
               <h3 className="course__title">
-                Crafting en Desarrollo Web Profesional
+                Bootcamp de Programación Web Full Stack
               </h3>
               <dl className="course__data-list">
                 <div className="course__data">
@@ -92,16 +92,16 @@ const Courses = (): React.ReactElement => {
               </span>
               <div className="section__actions">
                 <Link
-                  href="/cursos/crafting-en-desarrollo-web-profesional"
+                  href="/cursos/bootcamp-de-programacion-web-full-stack"
                   className="button button--solid button--large"
                 >
                   Ver curso
                 </Link>
                 <a
-                  href="/docs/Dossier Crafting en Desarrollo Web Profesional.pdf"
+                  href="/docs/Dossier Bootcamp de Programacion Web Full Stack.pdf"
                   className="button button--outline button--large"
                   onClick={() =>
-                    registerDownload("Crafting en Desarrollo Web Profesional")
+                    registerDownload("Bootcamp de Programación Web Full Stack")
                   }
                   download
                 >
