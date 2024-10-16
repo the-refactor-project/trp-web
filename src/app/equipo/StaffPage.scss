@@ -15,9 +15,7 @@
     margin-top: 20px;
 
     @media (width >= variables.$breakpoint-sm) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: start;
+      flex-direction: row;
       gap: 100px;
     }
   }

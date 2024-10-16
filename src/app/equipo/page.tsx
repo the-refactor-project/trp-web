@@ -110,38 +110,6 @@ const StaffPage = (): React.ReactElement => {
                   </Link>
                 </article>
               </li>
-              <li>
-                <article className="member">
-                  <div className="member__picture">
-                    <Image
-                      src="/images/marianella-bruzzo.webp"
-                      alt="Marianella Bruzzo"
-                      width="200"
-                      height="200"
-                    />
-                    <h3 className="member__name">Marianella Bruzzo</h3>
-                    <p className="member__role">Campus Manager</p>
-                  </div>
-                  <p className="member__description">
-                    Desde siempre he sido una apasionada de la comunicación en
-                    todas sus formas. Por ello, he buscado continuamente
-                    involucrarme en actividades que me brinden nuevos
-                    conocimientos y herramientas para mejorar mi capacidad de
-                    diálogo. Mi lema es &quot;la curiosidad como motor&quot;, y
-                    con este espíritu, estaré a tu lado en la escuela para
-                    apoyarte en tu emocionante camino de aprendizaje en el mundo
-                    de la programación.
-                  </p>
-                  <Link
-                    href="https://www.linkedin.com/in/marianellabruzzoin"
-                    target="_blank"
-                    rel="noopener"
-                    className="member__link"
-                  >
-                    LinkedIn
-                  </Link>
-                </article>
-              </li>
             </ul>
           </section>
         </section>
