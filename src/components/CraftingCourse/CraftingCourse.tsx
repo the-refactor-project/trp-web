@@ -35,7 +35,7 @@ const CraftingCourse = (): React.ReactElement => {
           <strong>empresas de programación</strong> en un/a junior.
         </p>
         <p className="section__subtitle">
-          <strong>Plazas disponibles</strong> para la edición de septiembre.
+          <strong>Plazas disponibles</strong> para la edición de febrero.
         </p>
         <p className="section__subtitle">
           También tienes la opción de no pagar nada y empezar a pagar a plazos{" "}

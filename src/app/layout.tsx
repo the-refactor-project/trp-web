@@ -37,7 +37,7 @@ if (
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
-  const [isTopBarOpen, setIsTopBarOpen] = useState(false);
+  const [isTopBarOpen, setIsTopBarOpen] = useState(true);
 
   return (
     <html lang="es" className={`${roboto.variable} ${spaceGrotesk.variable}`}>

@@ -8,11 +8,14 @@ interface TopBarProps {
 const TopBar = ({ onClose }: TopBarProps): React.ReactElement => {
   return (
     <div className="top-bar">
-      <span>Plazas abiertas para el curso online</span>
-      <strong>Ingeniería en el Software: SOLID & Design Patterns</strong>{" "}
+      <span>¡Apúntate a nuestro</span>
+      <strong>
+        Taller gratuito de Introducción a la Programación Web!
+      </strong>{" "}
       <a
-        href="/cursos/ingenieria-en-el-software-solid-design-patterns"
+        href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/304503671"
         className="button button--outline button--small top-bar__cta"
+        target="_blank"
       >
         Más info
       </a>
