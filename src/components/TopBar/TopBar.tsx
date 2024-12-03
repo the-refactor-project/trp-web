@@ -8,14 +8,11 @@ interface TopBarProps {
 const TopBar = ({ onClose }: TopBarProps): React.ReactElement => {
   return (
     <div className="top-bar">
-      <span>¡Apúntate a nuestro</span>
-      <strong>
-        Taller gratuito de Introducción a la Programación Web!
-      </strong>{" "}
+      <span>Inscripciones abiertas para nuestro </span>
+      <strong>Curso online de TypeScript Avanzado</strong>{" "}
       <a
-        href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/304503671"
+        href="https://the-refactor-project.com/cursos#typescript-avanzado"
         className="button button--outline button--small top-bar__cta"
-        target="_blank"
       >
         Más info
       </a>
