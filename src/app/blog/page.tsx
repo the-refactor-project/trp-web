@@ -39,6 +39,26 @@ const BlogPage = (): React.ReactElement => {
             <li className="post-preview">
               <header className="post-preview__header">
                 <h2 className="post-preview__title">
+                  <Link href="/blog/aprender-typescript-es-clave-para-conseguir-trabajo-como-programador-a">
+                    Aprender TypeScript es clave para conseguir trabajo como
+                    programador/a
+                  </Link>
+                </h2>
+                <div className="post-preview__subtitle">
+                  Publicado el 11 de diciembre de 2024
+                </div>
+              </header>
+              <Image
+                className="post__image"
+                src="/images/developer.webp"
+                width="1200"
+                height="631"
+                alt="Developer de espaldas frente a varios monitores"
+              />
+            </li>
+            <li className="post-preview">
+              <header className="post-preview__header">
+                <h2 className="post-preview__title">
                   <Link href="/blog/quieres-trabajar-como-programador-a">
                     Quieres trabajar como programador/a
                   </Link>
