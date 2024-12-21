@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/snake/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/snake">
+  <script src="https://cdn.amplitude.com/script/43db83903e96a8014e8ec6f7540da500.js"></script>
+  <script>
+    if (
+      typeof window !== "undefined" &&
+      !document.cookie.includes("jomateix=") &&
+      document.location.hostname !== "localhost"
+    ) {
+      window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
+      window.amplitude.init('43db83903e96a8014e8ec6f7540da500', {
+        "fetchRemoteConfig": true,
+        "autocapture": true
+      });
+    }
+  </script>
+  <title>Snake navideño</title>
+  <script type="module" crossorigin src="/snake/assets/index-D7r_wZ65.js"></script>
+  <link rel="stylesheet" crossorigin href="/snake/assets/index--cRKmySC.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
