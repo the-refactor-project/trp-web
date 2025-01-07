@@ -9,9 +9,9 @@ const TopBar = ({ onClose }: TopBarProps): React.ReactElement => {
   return (
     <div className="top-bar">
       <span>Inscripciones abiertas para nuestro </span>
-      <strong>Curso online de TypeScript Avanzado</strong>{" "}
+      <strong>Curso online De JavaScript a TypeScript</strong>{" "}
       <a
-        href="https://the-refactor-project.com/cursos#typescript-avanzado"
+        href="https://the-refactor-project.com/cursos#de-js-a-ts"
         className="button button--outline button--small top-bar__cta"
       >
         Más info
