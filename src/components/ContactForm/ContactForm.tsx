@@ -26,6 +26,14 @@ const ContactForm = (): React.ReactElement => {
       throw new Error("The form is empty");
     }
 
+    const emailInput = form.current.querySelector("#email") as HTMLInputElement;
+
+    const bannedEmails = ["agenciafwdigital", "agenciadigitalv"];
+
+    if (bannedEmails.includes(emailInput?.value)) {
+      return;
+    }
+
     appendDamnMailchimpHiddenIdInputThatCrashesThePage(form.current);
 
     form.current.submit();
