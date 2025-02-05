@@ -1,11 +1,19 @@
 import Image from "next/image";
+import { useFeatureFlag } from "configcat-react";
 import "./TopBar.scss";
 
 interface TopBarProps {
+  isOpen: boolean;
   onClose: () => void;
 }
 
-const TopBar = ({ onClose }: TopBarProps): React.ReactElement => {
+const TopBar: React.FC<TopBarProps> = ({ isOpen, onClose }) => {
+  const { value: topBarFlag } = useFeatureFlag("topBar", false);
+
+  if (!isOpen || !topBarFlag) {
+    return null;
+  }
+
   return (
     <div className="top-bar">
       <span>Inscripciones abiertas para nuestro </span>

@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import TopBar from "../components/TopBar/TopBar";
 import "../styles/index.scss";
+import { ConfigCatProvider } from "configcat-react";
 
 const roboto = Roboto_Flex({
   subsets: ["latin"],
@@ -37,15 +38,20 @@ if (
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
-  const [isTopBarOpen, setIsTopBarOpen] = useState(false);
+  const [isTopBarOpen, setIsTopBarOpen] = useState(true);
 
   return (
     <html lang="es" className={`${roboto.variable} ${spaceGrotesk.variable}`}>
       <body className={isTopBarOpen ? "top-bar-open" : ""}>
-        {isTopBarOpen && <TopBar onClose={() => setIsTopBarOpen(false)} />}
-        <Header />
-        {children}
-        <Footer />
+        <ConfigCatProvider sdkKey={process.env.NEXT_PUBLIC_CONFIGCAT_KEY!}>
+          <TopBar
+            isOpen={isTopBarOpen}
+            onClose={() => setIsTopBarOpen(false)}
+          />
+          <Header />
+          {children}
+          <Footer />
+        </ConfigCatProvider>
         <a
           className="whatsapp"
           href="https://api.whatsapp.com/send?phone=34630262833"
