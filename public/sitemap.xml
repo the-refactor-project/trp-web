@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://the-refactor-project.com/</loc>
-  <lastmod>2024-12-03T17:18:00+00:00</lastmod>
+  <lastmod>2025-02-05T6:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -48,11 +48,6 @@
   <loc>https://the-refactor-project.com/blog/</loc>
   <lastmod>2024-12-11T07:19:00+00:00</lastmod>
   <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://the-refactor-project.com/equipo/</loc>
-  <lastmod>2024-10-16T07:19:00+00:00</lastmod>
-  <priority>0.5</priority>
 </url>
 <url>
   <loc>https://the-refactor-project.com/contacto/</loc>
