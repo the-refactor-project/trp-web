@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useFeatureFlag } from "configcat-react";
 import "./TopBar.scss";
@@ -17,9 +19,9 @@ const TopBar: React.FC<TopBarProps> = ({ isOpen, onClose }) => {
   return (
     <div className="top-bar">
       <span>Inscripciones abiertas para nuestro </span>
-      <strong>Curso online De JavaScript a TypeScript</strong>{" "}
+      <strong>Bootcamp de Programación Web Full Stack</strong>{" "}
       <a
-        href="https://the-refactor-project.com/cursos#de-js-a-ts"
+        href="https://the-refactor-project.com/cursos/bootcamp-de-programacion-web-full-stack"
         className="button button--outline button--small top-bar__cta"
       >
         Más info
