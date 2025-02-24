@@ -111,68 +111,6 @@ const Courses = (): React.ReactElement => {
             </div>
           </article>
         </li>
-        <li className="courses-list__featured">
-          <article className="course course--inverse">
-            <Image
-              src="/images/gafas-large.webp"
-              className="course__image course__image--desktop"
-              alt="Unas gafas sobre un portátil, la parte de pantalla que se ve a través de ellas aparece enfocada"
-              loading="lazy"
-              width="1200"
-              height="533"
-            />
-            <Image
-              src="/images/gafas-mobile.webp"
-              className="course__image"
-              alt="Unas gafas sobre un portátil, la parte de pantalla que se ve a través de ellas aparece enfocada"
-              loading="lazy"
-              width="500"
-              height="533"
-            />
-            <div className="course__info">
-              <h3 className="course__title">
-                Ingeniería en el Software: SOLID & Design Patterns
-              </h3>
-              <dl className="course__data-list">
-                <div className="course__data">
-                  <dt className="course__data-name">Formato</dt>
-                  <dd className="course__data-value">100% online</dd>
-                </div>
-                <div className="course__data">
-                  <dt className="course__data-name">Duración</dt>
-                  <dd className="course__data-value">
-                    2 semanas a tu ritmo
-                    <br />
-                    13 semanas clases en directo
-                  </dd>
-                </div>
-              </dl>
-              <span className="section__floating">
-                <strong>Curso bonificable por Fundae</strong>
-              </span>
-              <div className="section__actions">
-                <Link
-                  href="/cursos/ingenieria-en-el-software-solid-design-patterns"
-                  className="button button--solid button--large"
-                >
-                  Ver curso
-                </Link>
-                <a
-                  href="/docs/Dossier Ingeniería en el Software SOLID & Design Patterns.pdf"
-                  className="button button--outline button--large"
-                  onClick={() =>
-                    registerDownload(
-                      "Ingeniería en el Software SOLID & Design Patterns",
-                    )
-                  }
-                  download
-                >
-                  Descarga el dossier
-                </a>
-              </div>
-            </div>
-          </article>
-        </li>
         <li>
           <CourseCard course={typeScriptCourse} />
         </li>
