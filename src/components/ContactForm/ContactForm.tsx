@@ -153,7 +153,7 @@ const ContactForm = (): React.ReactElement => {
           ¿Dónde estamos?
         </h2>
         <p style={{ marginBottom: 15 }}>
-          👋 Ven a visitarnos a C/ Bruc, 149, 1er piso
+          👋 Ven a visitarnos a C/ Bruc 149, 1º 2ª B
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.864312492793!2d2.163471!3d41.398753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25e5f5cc24f%3A0x538fb151a674c0fc!2sCREC%20Coworking%20Diagonal%20-%20Depot%20Lab%20Barcelona!5e0!3m2!1ses!2ses!4v1739793610466!5m2!1ses!2ses"
