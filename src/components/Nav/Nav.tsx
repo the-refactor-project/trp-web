@@ -21,6 +21,11 @@ const Nav = ({ isOpen, toggleBurgerOpen }: NavProps): React.ReactElement => {
           </Link>
         </li>
         <li className="main-navigation__item">
+          <Link href="/equipo" onClick={toggleBurgerOpen}>
+            Nuestro equipo
+          </Link>
+        </li>
+        <li className="main-navigation__item">
           <Link href="/eventos" onClick={toggleBurgerOpen}>
             Eventos
           </Link>
