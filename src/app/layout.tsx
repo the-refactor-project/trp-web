@@ -55,6 +55,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <a
           className="whatsapp"
           href="https://api.whatsapp.com/send?phone=34630262833"
+          aria-label="Escríbenos por whatsapp"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552">
             <defs>

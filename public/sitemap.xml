@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://the-refactor-project.com/</loc>
-  <lastmod>2025-02-05T6:00:00+00:00</lastmod>
+  <lastmod>2025-02-05T06:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -22,6 +22,11 @@
 <url>
   <loc>https://the-refactor-project.com/cursos/bootcamp-de-programacion-web-full-stack/</loc>
   <lastmod>2024-11-19T04:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://the-refactor-project.com/blog/guillem-de-trabajar-en-un-supermercado-a-trabajar-de-programador/</loc>
+  <lastmod>2025-03-31T05:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -41,7 +46,7 @@
 </url>
 <url>
   <loc>https://the-refactor-project.com/blog/</loc>
-  <lastmod>2024-12-11T07:19:00+00:00</lastmod>
+  <lastmod>2025-03-31T07:19:00+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>

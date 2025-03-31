@@ -47,7 +47,11 @@ const ContactForm = (): React.ReactElement => {
             ¿Quieres recibir información sobre un curso o evento?
           </h2>
           <section className="section__text">
-            <p>Te contestaremos a la mayor brevedad posible</p>
+            <p>
+              Puedes escribirnos un whatsapp (pulsando el icono flotante) o
+              rellenando el formulario. Te contestaremos a la mayor brevedad
+              posible.
+            </p>
           </section>
         </div>
         <form

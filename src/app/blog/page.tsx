@@ -17,6 +17,26 @@ const BlogPage = (): React.ReactElement => {
           <h1 className="section__title">Blog</h1>
           <p className="section__description">Últimos artículos del blog</p>
           <ul className="posts">
+            <li className="post-preview">
+              <header className="post-preview__header">
+                <h2 className="post-preview__title">
+                  <Link href="/blog/guillem-de-trabajar-en-un-supermercado-a-trabajar-de-programador">
+                    Guillem, de trabajar en un supermercado a trabajar de
+                    programador
+                  </Link>
+                </h2>
+                <div className="post-preview__subtitle">
+                  Publicado el 31 de marzo de 2025
+                </div>
+              </header>
+              <Image
+                className="post__image"
+                src="/images/guillem-blasco-programador-recortada.webp"
+                width="1200"
+                height="631"
+                alt="Guillem Blasco"
+              />
+            </li>
             {/* <li className="post-preview">
               <header className="post-preview__header">
                 <h2 className="post-preview__title">

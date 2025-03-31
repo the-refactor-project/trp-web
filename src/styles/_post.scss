@@ -89,3 +89,18 @@
     }
   }
 }
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  @media (width >= variables.$breakpoint-lg) {
+    flex-direction: row;
+  }
+}
