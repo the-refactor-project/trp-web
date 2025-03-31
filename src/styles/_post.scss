@@ -95,12 +95,30 @@
   flex-direction: column;
   gap: 20px;
 
+  h2:first-child {
+    margin-top: 0;
+  }
+
   img {
     width: 300px;
     margin: 0 auto;
   }
 
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 1rem;
+  }
+
   @media (width >= variables.$breakpoint-lg) {
     flex-direction: row;
+  }
+}
+
+.image-text--wide {
+  img {
+    width: 500px;
   }
 }

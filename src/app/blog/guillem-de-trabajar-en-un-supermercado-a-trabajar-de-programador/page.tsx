@@ -147,25 +147,42 @@ const BlogGuillemPostPage = (): React.ReactElement => {
                 desarrolladores, las dailies o las diferentes reuniones que
                 puedes tener dia a dia.
               </p>
-              <h2>
-                ¿Qué es lo que más han valorado en el proceso de selección de tu
-                actual trabajo?
-              </h2>
-              <p>
-                Tener un código limpio y bien estructurado. También les gustó
-                que aplicara testing sobre mi código.
-              </p>
-              <h2>
-                ¿Qué consejo le darías a alguien que está pensando en apuntarse
-                al bootcamp?
-              </h2>
-              <p>
-                No es un camino de rosas, es una experiencia única y yo le
-                aconsejaría que durante el proceso del bootcamp y la búsqueda de
-                trabajo se aísle de todo (familia y amistades). ¡Y que ponga el
-                200% de su persona en aprender lo máximo y disfrutar de esta
-                experiencia!
-              </p>
+              <div className="image-text image-text--wide">
+                <figure>
+                  <Image
+                    className="post__image"
+                    src="/images/guillem-2.webp"
+                    width="613"
+                    height="800"
+                    alt="Guillem Blasco"
+                  />
+                  <figcaption>
+                    Guillem en su puesto de trabajo de programador
+                  </figcaption>
+                </figure>
+                <div>
+                  <h2>
+                    ¿Qué es lo que más han valorado en el proceso de selección
+                    de tu actual trabajo?
+                  </h2>
+                  <p>
+                    Tener un código limpio y bien estructurado. También les
+                    gustó que aplicara testing sobre mi código.
+                  </p>
+                  <h2>
+                    ¿Qué consejo le darías a alguien que está pensando en
+                    apuntarse al bootcamp?
+                  </h2>
+                  <p>
+                    No es un camino de rosas, es una experiencia única y yo le
+                    aconsejaría que durante el proceso del bootcamp y la
+                    búsqueda de trabajo se aísle de todo (familia y amistades).
+                    ¡Y que ponga el 200% de su persona en aprender lo máximo y
+                    disfrutar de esta experiencia!
+                  </p>
+                </div>
+              </div>
+
               <h2>
                 ¿Cómo crees que este bootcamp te ha cambiado personal y
                 profesionalmente?
