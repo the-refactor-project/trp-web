@@ -23,6 +23,11 @@ const Footer = (): React.ReactElement => {
               </Link>
             </li>
             <li>
+              <Link href="/cursos/ingenieria-en-el-software-solid-design-patterns">
+                Curso Ingeniería en el Software: SOLID & Design Patterns
+              </Link>
+            </li>
+            <li>
               <Link href="/eventos">Eventos</Link>
             </li>
             <li>
