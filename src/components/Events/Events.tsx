@@ -9,6 +9,51 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
+              href="https://www.meetup.com/software-crafters-barcelona/events/307182844/"
+              target="_blank"
+            >
+              <Image
+                src="/images/circus-kata.jpg"
+                alt="SOLID Refactoring Circus kata"
+                className="event__image"
+                width="611"
+                height="304"
+              />
+            </Link>
+            <h2 className="event__name">SOLID Refactoring Circus kata</h2>
+            <div className="event__metadata">
+              <span className="event__date">30 de abril a las 18.30h</span>
+              <span className="event__who">
+                Con Lorena Martínez y Mario González
+              </span>
+              <span className="event__type">Coding dojo</span>
+              <span className="event__price">Gratis</span>
+            </div>
+            <div className="event__description">
+              <p>
+                Nos juntamos con la comunidad de Software Crafters Barcelona
+                para facilitar un coding dojo circense 🎪.
+              </p>
+              <p>
+                Vamos a refactorizar unas clases que no respetan los principios
+                SOLID, para que el sistema informático de nuestro circo sea más
+                flexible y mantenible. ¡Tráete tu portátil!
+              </p>
+            </div>
+            <div className="event__actions">
+              <Link
+                href="https://www.meetup.com/software-crafters-barcelona/events/307182844/"
+                target="_blank"
+                className="button button--solid"
+              >
+                Inscríbete
+              </Link>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article className="event">
+            <Link
               href="https://www.meetup.com/the-refactor-project-programando-juntos-as/events/306238335"
               target="_blank"
             >
