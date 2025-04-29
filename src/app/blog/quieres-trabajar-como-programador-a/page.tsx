@@ -24,13 +24,14 @@ const BlogPost1Page = (): React.ReactElement => {
               <p className="post__author">
                 Por <strong>Mario González</strong>
               </p>
-              <Image
-                className="post__image"
-                src="/images/programadora.webp"
-                width="1200"
-                height="631"
-                alt="Chica programando en su puesto de trabajo, vista de espaldas"
-              />
+              <div className="post__image">
+                <Image
+                  src="/images/programadora.webp"
+                  width="1200"
+                  height="631"
+                  alt="Chica programando en su puesto de trabajo, vista de espaldas"
+                />
+              </div>
             </header>
             <div className="post__content">
               <p>

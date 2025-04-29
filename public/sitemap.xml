@@ -35,6 +35,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://the-refactor-project.com/blog/aprender-a-programar-no-deberia-ser-un-camino-solitario/</loc>
+  <lastmod>2025-04-29T05:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://the-refactor-project.com/blog/me-sera-dificil-encontrar-mi-primer-trabajo-de-programador-a/</loc>
   <lastmod>2024-02-12T07:19:00+00:00</lastmod>
   <priority>1</priority>
@@ -51,7 +56,7 @@
 </url>
 <url>
   <loc>https://the-refactor-project.com/blog/</loc>
-  <lastmod>2025-03-31T07:19:00+00:00</lastmod>
+  <lastmod>2025-04-29T05:19:00+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>

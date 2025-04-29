@@ -20,6 +20,28 @@ const BlogPage = (): React.ReactElement => {
             <li className="post-preview">
               <header className="post-preview__header">
                 <h2 className="post-preview__title">
+                  <Link href="/blog/aprender-a-programar-no-deberia-ser-un-camino-solitario">
+                    Aprender a programar no debería ser un camino solitario
+                  </Link>
+                </h2>
+                <div className="post-preview__subtitle">
+                  Publicado el 29 de abril de 2025
+                </div>
+              </header>
+              <div className="post-preview__image">
+                <Link href="/blog/aprender-a-programar-no-deberia-ser-un-camino-solitario">
+                  <Image
+                    src="/images/team-classroom.webp"
+                    width="1200"
+                    height="631"
+                    alt="Equipo de developers junior trabajando juntas/os en un portátil"
+                  />
+                </Link>
+              </div>
+            </li>
+            <li className="post-preview">
+              <header className="post-preview__header">
+                <h2 className="post-preview__title">
                   <Link href="/blog/guillem-de-trabajar-en-un-supermercado-a-trabajar-de-programador">
                     Guillem, de trabajar en un supermercado a trabajar de
                     programador
@@ -29,13 +51,16 @@ const BlogPage = (): React.ReactElement => {
                   Publicado el 31 de marzo de 2025
                 </div>
               </header>
-              <Image
-                className="post__image"
-                src="/images/guillem-blasco-programador-recortada.webp"
-                width="1200"
-                height="631"
-                alt="Guillem Blasco"
-              />
+              <div className="post-preview__image">
+                <Link href="/blog/guillem-de-trabajar-en-un-supermercado-a-trabajar-de-programador">
+                  <Image
+                    src="/images/guillem-blasco-programador-recortada.webp"
+                    width="1200"
+                    height="631"
+                    alt="Guillem Blasco"
+                  />
+                </Link>
+              </div>
             </li>
             {/* <li className="post-preview">
               <header className="post-preview__header">
@@ -68,13 +93,16 @@ const BlogPage = (): React.ReactElement => {
                   Publicado el 11 de diciembre de 2024
                 </div>
               </header>
-              <Image
-                className="post__image"
-                src="/images/developer.webp"
-                width="1200"
-                height="631"
-                alt="Developer de espaldas frente a varios monitores"
-              />
+              <div className="post-preview__image">
+                <Link href="/blog/aprender-typescript-es-clave-para-conseguir-trabajo-como-programador-a">
+                  <Image
+                    src="/images/developer.webp"
+                    width="1200"
+                    height="631"
+                    alt="Developer de espaldas frente a varios monitores"
+                  />
+                </Link>
+              </div>
             </li>
             <li className="post-preview">
               <header className="post-preview__header">
@@ -87,13 +115,16 @@ const BlogPage = (): React.ReactElement => {
                   Publicado el 19 de marzo de 2024
                 </div>
               </header>
-              <Image
-                className="post__image"
-                src="/images/programadora.webp"
-                width="1200"
-                height="631"
-                alt="Chica programadora con un portátil lleno de pegatinas"
-              />
+              <div className="post-preview__image">
+                <Link href="/blog/quieres-trabajar-como-programador-a">
+                  <Image
+                    src="/images/programadora.webp"
+                    width="1200"
+                    height="631"
+                    alt="Chica programadora con un portátil lleno de pegatinas"
+                  />
+                </Link>
+              </div>
             </li>
             <li className="post-preview">
               <header className="post-preview__header">
@@ -107,15 +138,16 @@ const BlogPage = (): React.ReactElement => {
                   Publicado el 11 de febrero de 2024
                 </div>
               </header>
-              <Link href="/blog/me-sera-dificil-encontrar-mi-primer-trabajo-de-programador-a">
-                <Image
-                  className="post__image"
-                  src="/images/desesperacion-desktop.webp"
-                  width="1200"
-                  height="631"
-                  alt="Mujer con gesto de desesperación frente a su portátil"
-                />
-              </Link>
+              <div className="post-preview__image">
+                <Link href="/blog/me-sera-dificil-encontrar-mi-primer-trabajo-de-programador-a">
+                  <Image
+                    src="/images/desesperacion-desktop.webp"
+                    width="1200"
+                    height="631"
+                    alt="Mujer con gesto de desesperación frente a su portátil"
+                  />
+                </Link>
+              </div>
             </li>
           </ul>
         </section>

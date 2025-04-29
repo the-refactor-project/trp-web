@@ -25,13 +25,14 @@ const BlogPost2Page = (): React.ReactElement => {
               <p className="post__author">
                 Por <strong>Mario González</strong>
               </p>
-              <Image
-                className="post__image"
-                src="/images/desesperacion-desktop.webp"
-                width="1200"
-                height="631"
-                alt="Mujer con gesto de desesperación frente a su portátil"
-              />
+              <div className="post__image">
+                <Image
+                  src="/images/desesperacion-desktop.webp"
+                  width="1200"
+                  height="631"
+                  alt="Mujer con gesto de desesperación frente a su portátil"
+                />
+              </div>
             </header>
             <div className="post__content">
               <p>

@@ -87,6 +87,24 @@
         min-height: 72px;
       }
     }
+
+    &__image {
+      height: 320px;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+
+  &__image {
+    height: 450px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
   }
 }
 

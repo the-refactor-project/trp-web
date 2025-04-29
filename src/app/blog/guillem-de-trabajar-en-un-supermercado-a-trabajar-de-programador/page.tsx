@@ -28,7 +28,7 @@ const BlogGuillemPostPage = (): React.ReactElement => {
               </p>
             </header>
             <div className="post__content">
-              <div className="image-text">
+              <div className="image-text post__image">
                 <Image
                   className="post__image"
                   src="/images/guillem-blasco-programador.webp"
@@ -148,7 +148,7 @@ const BlogGuillemPostPage = (): React.ReactElement => {
                 puedes tener dia a dia.
               </p>
               <div className="image-text image-text--wide">
-                <figure>
+                <figure className="post__image">
                   <Image
                     className="post__image"
                     src="/images/guillem-2.webp"

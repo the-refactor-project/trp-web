@@ -26,13 +26,14 @@ const BlogPost2Page = (): React.ReactElement => {
               <p className="post__author">
                 Por <strong>Mario González</strong>
               </p>
-              <Image
-                className="post__image"
-                src="/images/developer.webp"
-                width="1200"
-                height="631"
-                alt="Developer de espaldas frente a varios monitores"
-              />
+              <div className="post__image">
+                <Image
+                  src="/images/developer.webp"
+                  width="1200"
+                  height="631"
+                  alt="Developer de espaldas frente a varios monitores"
+                />
+              </div>
             </header>
             <div className="post__content">
               <p>
