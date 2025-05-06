@@ -9,6 +9,51 @@ const Events = (): React.ReactElement => {
         <li>
           <article className="event">
             <Link
+              href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/307540941"
+              target="_blank"
+            >
+              <Image
+                src="/images/taller-introduccion-a-la-programacion-2025-05.png"
+                alt="Taller Introducción a la Programación"
+                className="event__image"
+                width="611"
+                height="304"
+              />
+            </Link>
+            <h2 className="event__name">Introducción a la Programación Web</h2>
+            <div className="event__metadata">
+              <span className="event__date">17 de mayo a las 10h</span>
+              <span className="event__who">Con Mario González</span>
+              <span className="event__type">Taller presencial</span>
+              <span className="event__price">Gratis</span>
+            </div>
+            <div className="event__description">
+              <p>
+                Taller gratuito para quienes estáis pensando en dedicaros a la
+                programación o simplemente queréis trastear con código, y no lo
+                habéis hecho nunca antes.
+              </p>
+              <p>
+                Si quieres empezar a aprender programación, apúntate a nuestro
+                taller gratuito presencial de Introducción a la Programación
+                Web, donde podrás empezar a jugar con JavaScript y ver qué
+                posibilidades ofrece esto de la programación.
+              </p>
+            </div>
+            <div className="event__actions">
+              <Link
+                href="https://www.meetup.com/es-ES/the-refactor-project-programando-juntos-as/events/307540941"
+                target="_blank"
+                className="button button--solid"
+              >
+                Inscríbete
+              </Link>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article className="event">
+            <Link
               href="https://www.meetup.com/software-crafters-barcelona/events/307182844/"
               target="_blank"
             >
