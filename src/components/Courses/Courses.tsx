@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as amplitude from "@amplitude/analytics-browser";
-import "./Courses.scss";
 import CourseCard, { Course } from "../CourseCard/CourseCard";
+import "./Courses.scss";
 
 const Courses = (): React.ReactElement => {
   const typeScriptCourse: Course = {
@@ -38,6 +38,22 @@ const Courses = (): React.ReactElement => {
     hours: 12,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Fundamentos de SQL.pdf",
+  };
+  const angularCourse: Course = {
+    id: "angular",
+    title: "Desarrollo con Angular",
+    image: "Curso-Desarrollo-con-Angular.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier Desarrollo con Angular.pdf",
+  };
+  const a11yCourse: Course = {
+    id: "accesibilidad-web",
+    title: "Accesibilidad Web",
+    image: "Curso-Accesibilidad-Web.png",
+    hours: 12,
+    sessions: "4 sesiones de 3 horas",
+    document: "Dossier Accesibilidad Web.pdf",
   };
 
   const registerDownload = (course: string) => {
@@ -174,6 +190,9 @@ const Courses = (): React.ReactElement => {
           </article>
         </li>
         <li>
+          <CourseCard course={a11yCourse} />
+        </li>
+        <li>
           <CourseCard course={typeScriptCourse} />
         </li>
         <li>
@@ -184,6 +203,9 @@ const Courses = (): React.ReactElement => {
         </li>
         <li>
           <CourseCard course={sqlCourse} />
+        </li>
+        <li>
+          <CourseCard course={angularCourse} />
         </li>
       </ul>
     </section>
