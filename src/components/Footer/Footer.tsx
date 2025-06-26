@@ -18,6 +18,9 @@ const Footer = (): React.ReactElement => {
               <Link href="/equipo">Nuestro equipo</Link>
             </li>
             <li>
+              <Link href="/servicios">Servicios</Link>
+            </li>
+            <li>
               <Link href="/cursos/bootcamp-de-programacion-web-full-stack">
                 Bootcamp de Programación Web Full Stack
               </Link>

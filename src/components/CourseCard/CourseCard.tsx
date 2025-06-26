@@ -18,7 +18,7 @@ interface CourseCardProps {
 }
 
 const CourseCard = ({
-  course: { id, title, image, hours, sessions, document },
+  course: { id, title, image, hours, document },
 }: CourseCardProps): React.ReactElement => {
   const registerEvent = () => {
     amplitude.logEvent("Clicado download del dossier de " + title);
@@ -46,10 +46,7 @@ const CourseCard = ({
         </div>
         <div className="course__data">
           <dt className="course__data-name">Duración</dt>
-          <dd className="course__data-value">
-            {hours} horas
-            <br />({sessions})
-          </dd>
+          <dd className="course__data-value">{hours} horas</dd>
         </div>
       </dl>
       <div className="section__actions">

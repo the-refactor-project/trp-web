@@ -11,7 +11,7 @@ const Courses = (): React.ReactElement => {
     id: "de-js-a-ts",
     title: "De JavaScript a TypeScript",
     image: "Curso-De-JavaScript-a-TypeScript.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier de JS a TS.pdf",
   };
@@ -19,7 +19,7 @@ const Courses = (): React.ReactElement => {
     id: "typescript-avanzado",
     title: "TypeScript Avanzado",
     image: "Curso-TypeScript-Avanzado.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier TypeScript Avanzado.pdf",
   };
@@ -27,7 +27,7 @@ const Courses = (): React.ReactElement => {
     id: "testing-en-front",
     title: "Testing en el Front",
     image: "Curso-Testing-Front.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Testing en el Front.pdf",
   };
@@ -35,7 +35,7 @@ const Courses = (): React.ReactElement => {
     id: "fundamentos-sql",
     title: "Fundamentos de SQL",
     image: "Curso-Fundamentos-SQL.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Fundamentos de SQL.pdf",
   };
@@ -43,7 +43,7 @@ const Courses = (): React.ReactElement => {
     id: "angular",
     title: "Desarrollo con Angular",
     image: "Curso-Desarrollo-con-Angular.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Desarrollo con Angular.pdf",
   };
@@ -51,7 +51,7 @@ const Courses = (): React.ReactElement => {
     id: "accesibilidad-web",
     title: "Accesibilidad Web",
     image: "Curso-Accesibilidad-Web.png",
-    hours: 12,
+    hours: 15,
     sessions: "4 sesiones de 3 horas",
     document: "Dossier Accesibilidad Web.pdf",
   };
@@ -62,71 +62,8 @@ const Courses = (): React.ReactElement => {
 
   return (
     <section className="section courses" id="cursos" data-testid="courses">
-      <h2 className="section__title">Nuestros cursos</h2>
+      <h2 className="section__title">Formaciones bonificables por Fundae</h2>
       <ul className="courses-list">
-        <li className="courses-list__featured">
-          <article className="course">
-            <Image
-              src="/images/programando-fondo.webp"
-              className="course__image course__image--desktop"
-              alt="Manos escribiendo muy rápidamente en un portátil"
-              loading="lazy"
-              width="1200"
-              height="533"
-            />
-            <Image
-              src="/images/programando.webp"
-              className="course__image"
-              alt="Manos escribiendo muy rápidamente en un portátil"
-              loading="lazy"
-              width="500"
-              height="533"
-            />
-            <div className="course__info">
-              <h3 className="course__title">
-                Bootcamp de Programación Web Full Stack
-              </h3>
-              <dl className="course__data-list">
-                <div className="course__data">
-                  <dt className="course__data-name">Formato híbrido</dt>
-                  <dd className="course__data-value">
-                    25% remoto
-                    <br />
-                    75% presencial
-                  </dd>
-                </div>
-                <div className="course__data">
-                  <dt className="course__data-name">Duración</dt>
-                  <dd className="course__data-value">
-                    1 mes remoto
-                    <br />3 meses presencial
-                  </dd>
-                </div>
-              </dl>
-              <span className="section__floating">
-                Paga cuando empieces a trabajar
-              </span>
-              <div className="section__actions">
-                <Link
-                  href="/cursos/bootcamp-de-programacion-web-full-stack"
-                  className="button button--solid button--large"
-                >
-                  Ver curso
-                </Link>
-                <a
-                  href="/docs/Dossier Bootcamp de Programacion Web Full Stack.pdf"
-                  className="button button--outline button--large"
-                  onClick={() =>
-                    registerDownload("Bootcamp de Programación Web Full Stack")
-                  }
-                  download
-                >
-                  Descarga el dossier
-                </a>
-              </div>
-            </div>
-          </article>
-        </li>
         <li className="courses-list__featured">
           <article className="course course--inverse">
             <Image
@@ -206,6 +143,72 @@ const Courses = (): React.ReactElement => {
         </li>
         <li>
           <CourseCard course={angularCourse} />
+        </li>
+      </ul>
+      <h2 className="section__title">Bootcamp</h2>
+      <ul className="courses-list">
+        <li className="courses-list__featured">
+          <article className="course">
+            <Image
+              src="/images/programando-fondo.webp"
+              className="course__image course__image--desktop"
+              alt="Manos escribiendo muy rápidamente en un portátil"
+              loading="lazy"
+              width="1200"
+              height="533"
+            />
+            <Image
+              src="/images/programando.webp"
+              className="course__image"
+              alt="Manos escribiendo muy rápidamente en un portátil"
+              loading="lazy"
+              width="500"
+              height="533"
+            />
+            <div className="course__info">
+              <h3 className="course__title">
+                Bootcamp de Programación Web Full Stack
+              </h3>
+              <dl className="course__data-list">
+                <div className="course__data">
+                  <dt className="course__data-name">Formato híbrido</dt>
+                  <dd className="course__data-value">
+                    25% remoto
+                    <br />
+                    75% presencial
+                  </dd>
+                </div>
+                <div className="course__data">
+                  <dt className="course__data-name">Duración</dt>
+                  <dd className="course__data-value">
+                    1 mes remoto
+                    <br />3 meses presencial
+                  </dd>
+                </div>
+              </dl>
+              <span className="section__floating">
+                Paga cuando empieces a trabajar
+              </span>
+              <div className="section__actions">
+                <Link
+                  href="/cursos/bootcamp-de-programacion-web-full-stack"
+                  className="button button--solid button--large"
+                >
+                  Ver curso
+                </Link>
+                <a
+                  href="/docs/Dossier Bootcamp de Programacion Web Full Stack.pdf"
+                  className="button button--outline button--large"
+                  onClick={() =>
+                    registerDownload("Bootcamp de Programación Web Full Stack")
+                  }
+                  download
+                >
+                  Descarga el dossier
+                </a>
+              </div>
+            </div>
+          </article>
         </li>
       </ul>
     </section>
