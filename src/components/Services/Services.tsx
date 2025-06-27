@@ -22,12 +22,12 @@ const Services = (): React.ReactElement => {
         <div className="services__grid">
           {" "}
           <article className="service">
-            <div className="service__icon">
+            <div className="service__picture">
               <Image
-                src="/images/computer.webp"
-                alt="Desarrollo de aplicaciones"
-                width="80"
-                height="80"
+                src="/images/apps.webp"
+                alt="Mockups en papel"
+                width="800"
+                height="530"
               />
             </div>
             <h2 className="service__title">Desarrollo de aplicaciones</h2>
@@ -52,12 +52,12 @@ const Services = (): React.ReactElement => {
             </div>
           </article>{" "}
           <article className="service">
-            <div className="service__icon">
+            <div className="service__picture">
               <Image
-                src="/icons/equipo.png"
-                alt="Accesibilidad web"
-                width="80"
-                height="80"
+                src="/images/accessibility.webp"
+                alt="Usuario viendo la web de las WCAG"
+                width="800"
+                height="530"
               />
             </div>
             <h2 className="service__title">Accesibilidad web</h2>
@@ -84,7 +84,7 @@ const Services = (): React.ReactElement => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver dossier
+                Ver dossier del curso
               </a>
             </div>
           </article>
@@ -143,12 +143,14 @@ const Services = (): React.ReactElement => {
         </div>
       </section>
 
-      <section className="section section--centered section--discover">
+      <section
+        className="section section--centered section--discover"
+        style={{ marginBottom: 25 }}
+      >
         <h2 className="section__title">¿Tienes un proyecto en mente?</h2>
         <p className="section__text">
           Cuéntanos qué necesitas y te ayudaremos a encontrar la mejor solución
-          técnica para tu empresa. Trabajamos con startups, pymes y grandes
-          corporaciones.
+          técnica para tu empresa.
         </p>
         <div className="section__actions">
           <Link
