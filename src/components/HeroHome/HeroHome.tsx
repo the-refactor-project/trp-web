@@ -20,10 +20,7 @@ const HeroHome = (): React.ReactElement => {
             </p>
           </div>
           <div className="hero-home__actions">
-            <Link
-              href="/cursos/bootcamp-de-programacion-web-full-stack"
-              className="button button--outline"
-            >
+            <Link href="/cursos/" className="button button--outline">
               Más información
             </Link>
             <Link href="#opiniones" className="button button--outline">

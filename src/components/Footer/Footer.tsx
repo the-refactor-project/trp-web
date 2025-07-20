@@ -18,9 +18,6 @@ const Footer = (): React.ReactElement => {
               <Link href="/equipo">Nuestro equipo</Link>
             </li>
             <li>
-              <Link href="/servicios">Servicios</Link>
-            </li>
-            <li>
               <Link href="/cursos/ingenieria-en-el-software-solid-design-patterns">
                 Curso Ingeniería en el Software: SOLID & Design Patterns
               </Link>
