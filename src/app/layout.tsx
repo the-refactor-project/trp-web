@@ -6,7 +6,6 @@ import { Roboto_Flex, Space_Grotesk } from "next/font/google";
 import { PropsWithChildren, useState } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import TopBar from "../components/TopBar/TopBar";
 import "../styles/index.scss";
 import { ConfigCatProvider } from "configcat-react";
 
@@ -44,10 +43,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="es" className={`${roboto.variable} ${spaceGrotesk.variable}`}>
       <body className={isTopBarOpen ? "top-bar-open" : ""}>
         <ConfigCatProvider sdkKey={process.env.NEXT_PUBLIC_CONFIGCAT_KEY!}>
-          <TopBar
-            isOpen={isTopBarOpen}
-            onClose={() => setIsTopBarOpen(false)}
-          />
           <Header />
           {children}
           <Footer />

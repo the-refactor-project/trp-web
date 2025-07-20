@@ -9,16 +9,14 @@ const HeroHome = (): React.ReactElement => {
         <div className="hero-home__contents">
           <div className="hero-home__text">
             <h2 className="hero-home__title">
-              Estudia nuestro{" "}
-              <strong>Bootcamp de Programación Web Full Stack</strong>
+              Nuestros cursos <strong>mejoran tu forma de programar</strong>
             </h2>
             <p>
-              ¿Quieres dedicarte a la programación y no tienes experiencia
-              previa?
+              ¿Quieres formar a tus equipos en buenas prácticas de desarrollo?
             </p>
             <p>
-              Si lo que buscas es un <strong>cambio profesional</strong>, entra
-              y mira.
+              ¿Necesitas profundizar en alguna tecnología o metodología de
+              programación?
             </p>
           </div>
           <div className="hero-home__actions">
