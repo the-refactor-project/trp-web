@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import "../styles/index.scss";
 import { ConfigCatProvider } from "configcat-react";
+import TopBar from "../components/TopBar/TopBar";
 
 const roboto = Roboto_Flex({
   subsets: ["latin"],
@@ -43,6 +44,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="es" className={`${roboto.variable} ${spaceGrotesk.variable}`}>
       <body className={isTopBarOpen ? "top-bar-open" : ""}>
         <ConfigCatProvider sdkKey={process.env.NEXT_PUBLIC_CONFIGCAT_KEY!}>
+          <TopBar
+            isOpen={isTopBarOpen}
+            onClose={() => setIsTopBarOpen(false)}
+          />
           <Header />
           {children}
           <Footer />

@@ -18,13 +18,13 @@ const TopBar: React.FC<TopBarProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="top-bar">
-      <span>Inscripciones abiertas para nuestro </span>
-      <strong>Bootcamp de Programación Web Full Stack</strong>{" "}
+      <span>Publicado nuestro primer codelab gratuito: </span>
+      <strong>Refactorizando pensando en SOLID</strong>{" "}
       <a
-        href="https://the-refactor-project.com/cursos/bootcamp-de-programacion-web-full-stack"
+        href="https://the-refactor-project-codelab-platform.netlify.app"
         className="button button--outline button--small top-bar__cta"
       >
-        Más info
+        Accede al Codelab
       </a>
       <button className="top-bar__close" onClick={onClose}>
         <Image src="/icons/close.svg" alt="close" width={24} height={24} />
