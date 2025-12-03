@@ -78,15 +78,16 @@ a {
   z-index: 9;
 }
 
-[data-trustmary-status] h2 {
-  font-size: 1.8rem !important;
-  font-weight: 500 !important;
-
-  @media (width >= variables.$breakpoint-sm) {
-    font-size: 2.5rem !important;
-  }
-
-  @media (width >= variables.$breakpoint-lg) {
-    font-size: 4rem !important;
-  }
+.sr-only {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
